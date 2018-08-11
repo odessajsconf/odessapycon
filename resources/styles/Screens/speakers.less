@@ -1,0 +1,173 @@
+.speakers {
+  min-height: 100vh;
+  height: auto;
+}
+
+.speakers-bg-img {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: 155px;
+  margin-top: 100px;
+  user-select: none;
+}
+
+.speakers-list {
+  margin-top: 80px;
+  flex-wrap: wrap;
+
+}
+
+.speaker-item {
+  margin: 10px 10px 30px;
+  padding: 10px;
+  border-radius: 6px;
+  width: 30%;
+  max-width: 320px;
+  min-width: 280px;
+  cursor: pointer;
+  transition: .2s;
+  &:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+  }
+}
+
+.speaker-img {
+  img {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.speaker-name {
+  margin-top: 15px;
+  color: @color_blue;
+  .font-size(26);
+  font-weight: 700;
+}
+
+.speaker-position {
+  margin-top: 15px;
+  color: @color_gray_light;
+  .font-size(15);
+  font-weight: 400;
+}
+
+.speaker-report {
+  margin-top: 15px;
+  color: @color_gray_light;
+  .font-size(16);
+  font-weight: 700;
+}
+
+// modal
+
+.speakers-modal_img {
+  width: 170px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.speakers-modal_txt {
+  margin-left: 20px;
+  text-align: left;
+
+  .speaker-name {
+    margin-top: 0;
+  }
+}
+
+.speakers-modal_content p,
+.speakers-modal_content div,
+.speakers-modal_content {
+  text-align: left;
+  color: @color_gray_light;
+  .font-size(15);
+  font-weight: 400;
+}
+
+.speakers-modal_content {
+  p {
+    margin-bottom: 15px;
+  }
+  div{
+    margin-bottom: 30px;
+  }
+  .speaker-report {
+    .font-size(18);
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+}
+
+
+@media @mobileLg {
+  .speakers-modal_txt {
+    .speaker-name {
+      .font-size(18)
+    }
+
+    .speaker-position {
+      .font-size(14);
+      margin-top: 10px;
+    }
+
+    .speaker-report {
+      margin-top: 10px;
+      .font-size(16);
+    }
+  }
+
+
+  .speakers-modal_content p,
+  .speakers-modal_content div,
+  .speakers-modal_content {
+    .font-size(14);
+  }
+
+  .speakers-modal_content{
+    .speaker-report{
+      .font-size(16);
+    }
+  }
+
+
+
+  .speaker-item {
+    margin: 10px;
+  }
+
+  .speakers-bg-img {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .speakers-modal_content {
+    margin-bottom: 60px!important;
+  }
+}
+
+@media @mobileSm {
+  .speakers-modal_heading {
+    display: block !important;
+  }
+
+  .speakers-modal_img {
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .speakers-modal_txt {
+    margin-left: 0;
+
+    .speaker-name {
+      margin-top: 15px;
+    }
+  }
+}
