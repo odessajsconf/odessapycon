@@ -1,6 +1,6 @@
 .heading {
   background-color: #fff;
-  //background-image: url("../img/heading_bg.svg");
+  background-image: url("../img/heading_bg.png");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 106%;
@@ -19,9 +19,9 @@
 }
 
 .heading-date {
-  margin-left: 15px;
+  margin-top: 12vh;
   .font-size(40);
-  font-weight: bold;
+  font-weight: 400;
   color: @color_blue;
   letter-spacing: 7px;
   white-space: nowrap;
@@ -30,10 +30,9 @@
 }
 
 .heading-list {
-  margin-top: 12vh;
   padding-left: 60px;
   .font-size(14);
-  font-weight: bold;
+  font-weight: 400;
   color: @color_blue;
   background-color: #fff;
   list-style-type: none;
@@ -77,7 +76,7 @@
       }
     }
 
-    &.sun {
+    &.clock {
       &::after {
         background-image: url("../img/i4.svg");
       }
