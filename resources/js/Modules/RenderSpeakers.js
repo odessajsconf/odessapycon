@@ -9,7 +9,7 @@ require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
 const speakers = [
   {
-    image : 'public/img/speakers/vitaliy_kucheryaviy.png',
+    image : 'public/img/speakers/vitaliy_kucheryaviy.jpg',
     name : 'Vitaliy Kucheryaviy',
     position : 'Fullstack Developer',
     company : '',
@@ -24,16 +24,14 @@ const speakers = [
     socials : []
   },
   {
-    image : 'public/img/speakers/dmitriy_gusev.jpg',
-    name : 'Дмитрий Гусев',
-    position : 'Team Lead / Senior JavaScript developer',
-    company : 'HYS Enterprise',
+    image : 'public/img/speakers/igor_davydenko.jpg',
+    name : 'Igor Davydenko',
+    position : 'Python/JS Developer',
+    company : '',
     rept : [
       {
-        title : '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.JS [Ru]',
-        description : 'В ходе беседы поговорим о некоторых весьма полезных инструментах, для генерации стартового ' +
-        'состояние проекта, автоматической настройки основных компонентов. В общем, как автоматизировать все то, что' +
-        ' каждый раз приходится делать, но не очень хочется'
+        title : '',
+        description : ''
       }
     ],
     aboutSpeaker : '',
@@ -59,7 +57,11 @@ export class RenderSpeakers {
       '<img src="${image}" alt="${name}">' +
       '</div>' +
       '<div class="speaker-name">${name}</div>' +
-      '<div class="speaker-position">${position} @${company}</div>' +
+      '<div class="speaker-position">${position} ' +
+        '{{if company}}' +
+          '@${company}' +
+        '{{/if}}' +
+      '</div>' +
       '<div class="speaker-report">' +
       '{{each rept }} {{html $value.title}} </br> </br>{{/each}}' +
       '</div>' +
@@ -142,7 +144,7 @@ export class RenderSpeakers {
         speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
         speakerName && $modalNameElement.text(speakerName);
         speakerPosition && $modalSpeakerPosition.text(speakerPosition);
-        speakerCompany && $modalSpeakerCompany.text(speakerCompany);
+        speakerCompany && $modalSpeakerCompany.text(`@${speakerCompany}`);
 
         reportsContent && $modalreportsContainer.html(reportsContent);
 

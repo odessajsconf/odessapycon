@@ -26,14 +26,14 @@
     <div class="header-cont container">
       <div class="logo">
         <a href="#heading">
-          <!--<img src="public/img/logo_white.svg" alt="Node Conference">-->
+          <img src="public/img/logo.png" alt="Node Conference">
         </a>
       </div>
       <nav class="nav">
         <ul class="menu">
           <li><a href="#about">About</a></li>
           <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#workshops">Workshops</a></li>
+          <!--<li><a href="#workshops">Workshops</a></li>-->
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#" target="_blank" class="link">Tickets</a></li>
@@ -48,12 +48,21 @@
   <div class="wrapper">
     <section id="heading" class="heading p-b-80">
       <div class="container">
-        <div class="heading-title-row flex a-i-center m-t-40">
-          <div class="heading-logo">
-            <img src="public/img/logo_heading.jpg" alt="Node Conference">
+
+        <div class="heading-title-row flex j-c-space-between m-t-20 ">
+
+          <div class="heading-logo m-t-30">
+            <img src="public/img/logo.png" alt="Node Conference">
           </div>
+
+          <div class="heading-sun m-l-30">
+            <img src="public/img/heading_sun.svg" alt="">
+          </div>
+
+
         </div>
-        <div class="flex f-d-column a-i-flex-end j-c-flex-end">
+
+        <div class="flex f-d-column a-i-flex-end j-c-flex-end heading-list-container">
 
           <div class="heading-date">
             September 30, 2018
@@ -72,6 +81,10 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="user-select-none">
+        <img class="heading-bg-img" src="public/img/heading_bg.png" alt="lighthouse">
+        <img class="heading-bg-img-m" src="public/img/heading_bg_m.png" alt="lighthouse">
       </div>
     </section>
 
@@ -97,7 +110,7 @@
                   </div>
                 </a>
                 <div class="about-ticket-desc">
-                  950 UAH
+                  850 UAH
                 </div>
               </li>
               <li class="about-ticket-item">
@@ -108,7 +121,7 @@
                   </div>
                 </a>
                 <div class="about-ticket-desc">
-                  1450 UAH
+                  1350 UAH
                 </div>
               </li>
               <li class="about-ticket-item">
@@ -119,7 +132,7 @@
                   </div>
                 </a>
                 <div class="about-ticket-desc">
-                  1800 UAH
+                  1650 UAH
                 </div>
               </li>
             </ul>
@@ -133,21 +146,31 @@
     </section>
 
 
-
-    <section class="speakers flex f-d-column j-c-space-between">
+    <section class="history">
       <div class="container">
 
-        <div class="flex">
-          <div class="h4 flex-item-4 m-r-50" style="color: #333333; font-size: 25px; letter-spacing: 4.75px;">
-          7 декабря 2013 года в одесском офисе Lohika состоялась встреча «OdessaPy».
-          Мероприятие прошло в рамках конференций CityPy и собрало гостей из разных уголков Украины, а также из
-          России и Молдавии — всего более 75 человек.
-          Программа была довольно насыщенной и освещала различные аспекты программирования на Python.
+        <div class="flex a-i-center j-c-space-between history-content">
+          <div class="h4 flex-item-4 m-r-50 history-txt">
+            7 декабря 2013 года состоялась встреча «OdessaPy». Собрались гости из разных уголков Украины, а также из
+            России и Молдавии — более 75 человек. Программа была довольно насыщенной и освещала различные аспекты
+            программирования на Python.
           </div>
 
           <div class="flex-item-1">
             <img class="" src="public/img/sun_bg.png" alt="sun" style="max-width: 240px">
           </div>
+        </div>
+
+        <div class="flex flex-wrap history-gallery">
+          <div>
+
+            <img class="" src="public/img/history/history_1.jpg" alt="report">
+          </div>
+          <div>
+
+            <img class="" src="public/img/history/history_2.jpg" alt="cake">
+          </div>
+
         </div>
       </div>
     </section>
@@ -157,8 +180,6 @@
         <div class="h2">Speakers</div>
         <div class="flex j-c-space-around speakers-list" id="speakers-list">
 
-          <!--<div class="speaker-item" data-remodal-target="speakers-modal"><div class="speaker-img"><img src="public/img/speakers/max_klymyshyn.jpg" alt="Max Klymyshyn"></div><div class="speaker-name">Max Klymyshyn</div><div class="speaker-position">Tech Lead</div><div class="speaker-report"> Workshop: Build blockchain using CRDT and Merkle Trees [Ru] <br> <br></div></div>-->
-          <!--<div class="speaker-item" data-remodal-target="speakers-modal"><div class="speaker-img"><img src="public/img/speakers/roman_sachenko.jpg" alt="Roman Sachenko"></div><div class="speaker-name">Roman Sachenko</div><div class="speaker-position">Software Engineer</div><div class="speaker-report"> NodeJS Microservices + CQRS + Event Sourcing - Why do I do this? [Ru] <br> <br></div></div>-->
         </div>
 
       </div>
@@ -188,8 +209,8 @@
         <!--</div>-->
         <!--</div>-->
       </div>
-      <div class="flex user-select-none">
-        <img class="schedule-bg-img" src="public/img/schedule_bg.svg" alt="colonnade">
+      <div class="user-select-none">
+        <img class="schedule-bg-img" src="public/img/schedule_bg.png" alt="anchor">
       </div>
     </section>
 
@@ -197,24 +218,24 @@
       <div class="container">
         <div class="h2">Sponsors</div>
 
-        <!--<div class="m-t-80 h4 text-center sponsors-text">-->
-        <!--<p>Мы рады обсудить с Вами дополнительные условия партнерства, которые будут наиболее-->
-        <!--интересны для Вас, в индивидуальном порядке.</p>-->
-        <!--<br>-->
-        <!--<p>Хотите стать спонсором?</p>-->
-        <!--<p>позвоните нам <a class="text-bold link"  href="tel:380982845165">+38 (098) 284 51 65</a> / Мария</p>-->
-        <!--<p>напишите нам <a class="text-bold link"  href="mailto:nodejs.uaconf@gmail.com">nodejs.uaconf@gmail.com</a></p>-->
-        <!--<p>или постучитесь в Telegram - <a  class="text-bold link" href="tg://resolve?domain=380503731465">+38 (050) 373 14 65</a> / Юлия</p>-->
+        <div class="m-t-80 h4 text-center sponsors-text">
+        <p>Мы рады обсудить с Вами дополнительные условия партнерства, которые будут наиболее
+        интересны для Вас, в индивидуальном порядке.</p>
+        <br>
+        <p>Хотите стать спонсором?</p>
+        <p>позвоните нам <a class="text-bold link"  href="tel:380982845165">+38 (098) 284 51 65</a> / Мария</p>
+        <p>напишите нам <a class="text-bold link"  href="mailto:pycon.odessa@gmail.com">nodejs.uaconf@gmail.com</a></p>
+        <p>или постучитесь в Telegram - <a  class="text-bold link" href="tg://resolve?domain=380503731465">+38 (050) 373 14 65</a> / Юлия</p>
 
-        <!--<div class="text-center m-t-50">-->
-        <!--<a href="#" target="_blank" class="btn">-->
-        <!--Скачать партнерскую программу-->
-        <!--</a>-->
-        <!--</div>-->
-        <!--</div>-->
+        <div class="text-center m-t-50">
+        <a href="#" target="_blank" class="btn">
+        Скачать партнерскую программу
+        </a>
+        </div>
+        </div>
       </div>
       <div class="user-select-none">
-        <img class="sponsors-bg-img" src="public/img/sponsors_bg.svg" alt="colonnade">
+        <img class="sponsors-bg-img" src="public/img/sponsors_bg.png" alt="seagull">
       </div>
     </section>
   </div>
@@ -232,7 +253,7 @@
       </div>
       <div class="speaker-position">
         <span class="position"></span>
-        @<span class="company"></span>
+        <span class="company"></span>
       </div>
     </div>
 

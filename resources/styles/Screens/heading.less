@@ -1,12 +1,26 @@
 .heading {
   background-color: #fff;
-  background-image: url("../img/heading_bg.png");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 106%;
-  height: 100vh;
-  min-height: 800px;
+  //background-image: url("../img/heading_bg.png");
+  //background-position: bottom center;
+  //background-repeat: no-repeat;
+  //background-size: 106%;
+  //height: 100vh;
+  //min-height: 600px;
 }
+
+.heading-bg-img-m,
+.heading-bg-img{
+  display: block;
+  width: 100%;
+  margin-top: -40vh;
+  user-select: none;
+}
+
+.heading-bg-img-m {
+  display: none;
+  margin-top: 0;
+}
+
 
 .heading-logo {
   width: 100%;
@@ -18,8 +32,20 @@
   }
 }
 
+.heading-sun{
+  width: 100%;
+  max-width: 400px;
+  transition: .2s;
+
+  img {
+    width: 100%;
+  }
+}
+
+
+
 .heading-date {
-  margin-top: 12vh;
+  margin-top: 5vh;
   .font-size(40);
   font-weight: 400;
   color: @color_blue;
@@ -37,6 +63,7 @@
   background-color: #fff;
   list-style-type: none;
   letter-spacing: 3px;
+  z-index: 1;
 
   li {
     position: relative;
@@ -89,7 +116,7 @@
     min-height: 700px;
   }
   .heading-logo {
-    max-width: 400px;
+    max-width: 500px;
   }
   .heading-date {
     .font-size(30);
@@ -104,24 +131,67 @@
   }
 }
 
+@media @laptopMd {
+  .heading-sun {
+    max-width: 300px;
+  }
+}
+
 @media @laptop {
+
+  .heading {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .heading-logo {
+    max-width: 400px;
+  }
+  .heading-bg-img,
+  .heading-sun {
+    display: none;
+  }
+
+  .heading-bg-img-m {
+    display: block;
+  }
+
   .heading-title-row {
+    margin-top: 0!important;
     display: block!important;
+    margin-right: 50px!important;
   }
   .heading-date {
     margin-left: 0;
-    margin-top: 20px;
-    .font-size(22);
+    margin-top: 60px;
+    .font-size(30);
   }
 
 }
+
+@media @tablet {
+  .heading-bg-img {
+    margin-top: 40px;
+  }
+}
+
 @media @mobileLg {
   .heading{
     min-height: 610px;
+
+    .container {
+      display: block;
+    }
   }
   .heading-title-row {
     margin-top: 20px!important;
+    margin-right: 0!important;
     display: block!important;
+  }
+
+  .heading-list-container {
+    display: block !important;
   }
 
   .heading-logo{
@@ -133,6 +203,7 @@
     margin: 40px auto 0;
     white-space: normal;
   }
+
 
   .heading-list {
     margin-top: 60px;

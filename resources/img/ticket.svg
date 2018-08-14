@@ -19,8 +19,8 @@
       }
 
       .cls-5 {
-        fill: #f3f6ff;
-        opacity: 0.6;
+        fill: #2e6aff;
+        opacity: 0.1;
       }
     </style>
     <clipPath id="clip-path">

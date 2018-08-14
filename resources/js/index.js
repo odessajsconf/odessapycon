@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { HeaderComponent } from './Components/Header';
 import { Popup } from './Components/Popup';
-// import { RenderSpeakers } from './Modules/RenderSpeakers';
+import { RenderSpeakers } from './Modules/RenderSpeakers';
 
 
 
@@ -19,7 +19,7 @@ class App {
 
   _initComponents() {
     new HeaderComponent();
-    // new RenderSpeakers();
+    new RenderSpeakers();
   }
 }
 
