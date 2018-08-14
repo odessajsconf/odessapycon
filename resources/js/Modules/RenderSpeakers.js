@@ -2,8 +2,6 @@ import $ from 'jquery';
 import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
 
-
-
 window.jQuery = $;
 require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
@@ -17,7 +15,7 @@ const speakers = [
       {
         title : '',
         description : ''
-      },
+      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
@@ -37,7 +35,7 @@ const speakers = [
     aboutSpeaker : '',
     socialsRendered : '',
     socials : []
-  },
+  }
 ];
 
 
@@ -50,17 +48,20 @@ export class RenderSpeakers {
   }
 
   _init() {
+    if( localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) ) {
+      $('#speakers-modal').html( localStorage.speakersModalHtml )
+    }
 
-    var speakerItem =
+    let speakerItem =
       '<div class="speaker-item" data-remodal-target="speakers-modal" data-item-index="__ReplaceWithIndex">' +
       '<div class="speaker-img">' +
       '<img src="${image}" alt="${name}">' +
       '</div>' +
       '<div class="speaker-name">${name}</div>' +
       '<div class="speaker-position">${position} ' +
-        '{{if company}}' +
-          '@${company}' +
-        '{{/if}}' +
+      '{{if company}}' +
+      '@${company}' +
+      '{{/if}}' +
       '</div>' +
       '<div class="speaker-report">' +
       '{{each rept }} {{html $value.title}} </br> </br>{{/each}}' +
@@ -69,10 +70,10 @@ export class RenderSpeakers {
 
     $.template('speakerTemplate', speakerItem);
 
-    var spekersHtml = '';
+    let spekersHtml = '';
 
     $.each(speakers, function (i, sp) {
-      var item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
+      let item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
 
       spekersHtml += item.replace('__ReplaceWithIndex', i);
 
@@ -90,43 +91,43 @@ export class RenderSpeakers {
     });
 
     function loadSpeakerModal($speakerInfoBlock) {
-      var $modalBody = $('#speakers-modal'),
+      let $modalBody = $('#speakers-modal'),
         $modalSpeakerAvatar = $modalBody.find('.speakers-modal_img img'),
         $modalNameElement = $modalBody.find('.speaker-name'),
         $modalSpeakerPosition = $modalBody.find('.speaker-position .position'),
         $modalSpeakerCompany = $modalBody.find('.speaker-position .company'),
-        // $modalSpeakerLinks = $modalBody.find('.speaker__link-list'),
-        $modalreportsContainer = $modalBody.find('.speakers-modal_content');
+        $modalreportsContainer = $modalBody.find('.speakers-modal_content'),
+      // $modalSpeakerLinks = $modalBody.find('.speaker__link-list'),
       // $modalSpeakerAboutText = $modalBody.find('.speaker-text').toggle(false);
 
-      var speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index'));
+      speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index')),
 
-      var $prevButton = $modalBody.find('button.remodal-prev');
-      var $nextButton = $modalBody.find('button.remodal-next');
+        $prevButton = $modalBody.find('button.remodal-prev'),
+        $nextButton = $modalBody.find('button.remodal-next');
 
       $prevButton.unbind('click').click(() => {
-        var prevIndex = speakerIndex == 0 ? (speakers.length - 1) : speakerIndex - 1;
+        let prevIndex = speakerIndex == 0 ? (speakers.length - 1) : speakerIndex - 1;
         that.helpers.showLoader($modalBody);
-        // that.popup.close();
+
         setTimeout(function () {
           loadSpeakerModal($('[data-item-index="' + prevIndex + '"]'));
         }, 600);
       });
-      //
+
       $nextButton.unbind('click').click(() => {
-        var nextIndex = speakerIndex == speakers.length - 1 ? 0 : speakerIndex + 1;
+        let nextIndex = speakerIndex == speakers.length - 1 ? 0 : speakerIndex + 1;
         that.helpers.showLoader($modalBody);
-        // that.popup.close();
+
         setTimeout(function () {
           loadSpeakerModal($('[data-item-index="' + nextIndex + '"]'));
         }, 600);
 
       });
 
-      var speakerData = speakers[speakerIndex];
+      let speakerData = speakers[speakerIndex];
 
       if(speakerData) {
-        var speakerAvatar = speakerData.image,
+        let speakerAvatar = speakerData.image,
           speakerName = speakerData.name,
           speakerPosition = speakerData.position,
           speakerCompany = speakerData.company,
@@ -151,7 +152,7 @@ export class RenderSpeakers {
         // speakerAboutText && $modalSpeakerAboutText.find('.modal-body__text').text(speakerAboutText).end().toggle(true);
         // $modalSpeakerLinks.html($speakerInfoBlock.find('.speakers-slide__info-links').html());
 
-
+        localStorage.setItem( 'speakersModalHtml', $modalBody.html() );
         that.helpers.hideLoader($modalBody);
       }
     }
