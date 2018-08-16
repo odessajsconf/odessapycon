@@ -12,7 +12,16 @@ export const SpeakersEn = [
     ],
     aboutSpeaker : '',
     socialsRendered : '',
-    socials : []
+    socials : [
+      {
+        link : 'https://www.linkedin.com/in/vitaliykucheraviy/',
+        fatype : 'linkedin'
+      },
+      {
+        link : 'https://github.com/vitalik',
+        fatype : 'github'
+      },
+    ]
   },
   {
     image : '../public/img/speakers/igor_davydenko.jpg',
@@ -27,6 +36,15 @@ export const SpeakersEn = [
     ],
     aboutSpeaker : '',
     socialsRendered : '',
-    socials : []
+    socials : [
+      {
+        link : 'https://www.facebook.com/playpauseandstop',
+        fatype : 'facebook'
+      },
+      {
+        link : 'https://github.com/playpauseandstop',
+        fatype : 'github'
+      },
+    ]
   }
 ];
