@@ -6,8 +6,8 @@ export const SpeakersRu =  [
     company : '',
     rept : [
       {
-        title : '',
-        description : ''
+        title : 'a dsfsdafsdf asdasdgsd',
+        description : 'lorem  fnisd bfsdauif bdsafy dsuyfsdiufvbdsugvsfg asdfudsyh fdsuyhf dsyufgds uyfgdsuyfdsg fouysdgf sduygsd uyf sduyfgsdyfg asdufygdsyf '
       }
     ],
     aboutSpeaker : '',
