@@ -24,12 +24,13 @@ export class RenderSpeakers {
       this.speakers = SpeakersEn;
     }
 
-    if( localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) ) {
+    if( localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) > -1 ) {
       $('#speakers-modal').html( localStorage.speakersModalHtml )
     }
 
     let speakerItem =
-      '<div class="speaker-item" data-remodal-target="speakers-modal" data-item-index="__ReplaceWithIndex">' +
+      '<div class="speaker-item">' +
+      '<div data-remodal-target="speakers-modal" data-item-index="__ReplaceWithIndex">'+
       '<div class="speaker-img">' +
       '<img src="${image}" alt="${name}">' +
       '</div>' +
@@ -42,23 +43,33 @@ export class RenderSpeakers {
       '<div class="speaker-report">' +
       '{{each rept }} {{html $value.title}} </br> </br>{{/each}}' +
       '</div>' +
+      '</div>'+
+      '<div class="speaker-socials">{{html socialsRendered}}</div>' +
       '</div>';
 
     $.template('speakerTemplate', speakerItem);
 
+    var socialsItem = "<a href='${link}' target='_blank'><i class='fa fa-${fatype}' aria-hidden='true'></i></a>";
+    $.template( "socialsTemplate", socialsItem );
+
+
     let spekersHtml = '';
 
     $.each(this.speakers, function (i, sp) {
-      let item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
+      $.each($.tmpl("socialsTemplate", sp.socials ), function(a, i){ sp.socialsRendered += i.outerHTML; });
 
+      let item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
       spekersHtml += item.replace('__ReplaceWithIndex', i);
+
     });
 
     $('#speakers-list').html(spekersHtml);
+
   }
 
   _events() {
     let that = this;
+
     $(document).on('click', '[data-remodal-target="speakers-modal"]', function () {
       let $speakerInfoBlock = $(this);
       loadSpeakerModal($speakerInfoBlock);
@@ -71,10 +82,10 @@ export class RenderSpeakers {
         $modalSpeakerPosition = $modalBody.find('.speaker-position .position'),
         $modalSpeakerCompany = $modalBody.find('.speaker-position .company'),
         $modalreportsContainer = $modalBody.find('.speakers-modal_content'),
-      // $modalSpeakerLinks = $modalBody.find('.speaker__link-list'),
-      // $modalSpeakerAboutText = $modalBody.find('.speaker-text').toggle(false);
+        $modalSpeakerLinks = $modalBody.find('.speaker-socials'),
+        // $modalSpeakerAboutText = $modalBody.find('.speaker-text').toggle(false);
 
-      speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index')),
+        speakerIndex = parseInt($speakerInfoBlock.attr('data-item-index')),
 
         $prevButton = $modalBody.find('button.remodal-prev'),
         $nextButton = $modalBody.find('button.remodal-next');
@@ -105,6 +116,7 @@ export class RenderSpeakers {
           speakerName = speakerData.name,
           speakerPosition = speakerData.position,
           speakerCompany = speakerData.company,
+          speakerSocials = speakerData.socialsRendered,
           reports = speakerData.rept,
           reportsContent = '',
           speakerAboutText = speakerData.aboutSpeaker;
@@ -124,7 +136,8 @@ export class RenderSpeakers {
         reportsContent && $modalreportsContainer.html(reportsContent);
 
         // speakerAboutText && $modalSpeakerAboutText.find('.modal-body__text').text(speakerAboutText).end().toggle(true);
-        // $modalSpeakerLinks.html($speakerInfoBlock.find('.speakers-slide__info-links').html());
+
+        $modalSpeakerLinks.html(speakerSocials);
 
         that.helpers.hideLoader($modalBody);
         setTimeout(()=>{

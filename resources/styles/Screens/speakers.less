@@ -81,6 +81,11 @@
   .speaker-name {
     margin-top: 0;
   }
+
+  .speaker-socials {
+    margin-top: 15px;
+    text-align: left;
+  }
 }
 
 .speakers-modal_content p,
@@ -104,6 +109,27 @@
     font-weight: 400;
     margin-bottom: 15px;
     color: @color_gray;
+  }
+}
+
+.speaker-socials {
+  text-align: center;
+  a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 3px 5px;
+    .font-size(20);
+    color: @color_gray_light;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: .2s;
+
+    &:hover {
+      color: @color_blue;
+    }
+
   }
 }
 

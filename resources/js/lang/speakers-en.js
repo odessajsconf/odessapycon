@@ -5,10 +5,10 @@ export const SpeakersEn = [
     position : 'Fullstack Developer',
     company : '',
     rept : [
-      {
-        title : '',
-        description : ''
-      }
+      // {
+      //   title : '',
+      //   description : ''
+      // }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
@@ -20,10 +20,10 @@ export const SpeakersEn = [
     position : 'Python/JS Developer',
     company : '',
     rept : [
-      {
-        title : '',
-        description : ''
-      }
+      // {
+      //   title : '',
+      //   description : ''
+      // }
     ],
     aboutSpeaker : '',
     socialsRendered : '',

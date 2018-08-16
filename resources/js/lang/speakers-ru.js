@@ -5,14 +5,15 @@ export const SpeakersRu =  [
     position : 'Fullstack Developer',
     company : '',
     rept : [
-      {
-        title : 'a dsfsdafsdf asdasdgsd',
-        description : 'lorem  fnisd bfsdauif bdsafy dsuyfsdiufvbdsugvsfg asdfudsyh fdsuyhf dsyufgds uyfgdsuyfdsg fouysdgf sduygsd uyf sduyfgsdyfg asdufygdsyf '
-      }
+      // {
+      //   title : '',
+      //   description : ''
+      // }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
-    socials : []
+    socials : [
+    ]
   },
   {
     image : 'public/img/speakers/igor_davydenko.jpg',
@@ -20,10 +21,10 @@ export const SpeakersRu =  [
     position : 'Python/JS Developer',
     company : '',
     rept : [
-      {
-        title : '',
-        description : ''
-      }
+      // {
+      //   title : '',
+      //   description : ''
+      // }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
