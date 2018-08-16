@@ -1,53 +1,29 @@
 import $ from 'jquery';
-import { Popup } from '../Components/Popup';
-import { Helpers } from '../Helpers';
-
 window.jQuery = $;
 require('../vendors/jquery-tmpl/jquery.tmpl.min');
-
-const speakers = [
-  {
-    image : 'public/img/speakers/vitaliy_kucheryaviy.jpg',
-    name : 'Vitaliy Kucheryaviy',
-    position : 'Fullstack Developer',
-    company : '',
-    rept : [
-      {
-        title : '',
-        description : ''
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : []
-  },
-  {
-    image : 'public/img/speakers/igor_davydenko.jpg',
-    name : 'Igor Davydenko',
-    position : 'Python/JS Developer',
-    company : '',
-    rept : [
-      {
-        title : '',
-        description : ''
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : []
-  }
-];
+import { Popup } from '../Components/Popup';
+import { Helpers } from '../Helpers';
+import {SpeakersRu} from '../lang/speakers-ru.js'
+import {SpeakersEn} from '../lang/speakers-en.js'
 
 
 export class RenderSpeakers {
   constructor() {
     this.popup = new Popup('#speakers-modal');
+    this.CONFIG = window.CONFIG;
+    this.speakers = null;
     this._init();
     this._events();
     this.helpers = new Helpers();
   }
 
   _init() {
+    if(this.CONFIG.LANG === 'ru') {
+      this.speakers = SpeakersRu;
+    } else {
+      this.speakers = SpeakersEn;
+    }
+
     if( localStorage.speakersModalHtml && location.hash.search(/speakers-modal/) ) {
       $('#speakers-modal').html( localStorage.speakersModalHtml )
     }
@@ -72,15 +48,13 @@ export class RenderSpeakers {
 
     let spekersHtml = '';
 
-    $.each(speakers, function (i, sp) {
+    $.each(this.speakers, function (i, sp) {
       let item = $.tmpl('speakerTemplate', sp)[0].outerHTML;
 
       spekersHtml += item.replace('__ReplaceWithIndex', i);
-
     });
 
     $('#speakers-list').html(spekersHtml);
-
   }
 
   _events() {
@@ -106,7 +80,7 @@ export class RenderSpeakers {
         $nextButton = $modalBody.find('button.remodal-next');
 
       $prevButton.unbind('click').click(() => {
-        let prevIndex = speakerIndex == 0 ? (speakers.length - 1) : speakerIndex - 1;
+        let prevIndex = speakerIndex == 0 ? (that.speakers.length - 1) : speakerIndex - 1;
         that.helpers.showLoader($modalBody);
 
         setTimeout(function () {
@@ -115,7 +89,7 @@ export class RenderSpeakers {
       });
 
       $nextButton.unbind('click').click(() => {
-        let nextIndex = speakerIndex == speakers.length - 1 ? 0 : speakerIndex + 1;
+        let nextIndex = speakerIndex == that.speakers.length - 1 ? 0 : speakerIndex + 1;
         that.helpers.showLoader($modalBody);
 
         setTimeout(function () {
@@ -124,7 +98,7 @@ export class RenderSpeakers {
 
       });
 
-      let speakerData = speakers[speakerIndex];
+      let speakerData = that.speakers[speakerIndex];
 
       if(speakerData) {
         let speakerAvatar = speakerData.image,
