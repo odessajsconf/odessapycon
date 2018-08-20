@@ -5,10 +5,12 @@ export const SpeakersRu =  [
     position : 'Fullstack Developer',
     company : '',
     rept : [
-      // {
-      //   title : '',
-      //   description : ''
-      // }
+      {
+        title : 'Супербыстрая разработка с Django Prototyper',
+        description : 'Разрабатываете на Django ? Представьте, что вы сможете создавать ваши приложения в 10-100 раз быстрее!\n' +
+        'Я покажу live-демо утилиту которая автоматизирует создание и доработку django проектов.\n' +
+        'Это UI которые позволяет бысто создавать очень сложные схемы баз данных, устанавливать и настраивать плагины.'
+      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
@@ -29,10 +31,10 @@ export const SpeakersRu =  [
     position : 'Python/JS Developer',
     company : '',
     rept : [
-      // {
-      //   title : '',
-      //   description : ''
-      // }
+      {
+        title : '',
+        description : ''
+      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',

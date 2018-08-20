@@ -3,12 +3,14 @@ export const SpeakersEn = [
     image : '../public/img/speakers/vitaliy_kucheryaviy.jpg',
     name : 'Vitaliy Kucheryaviy',
     position : 'Fullstack Developer',
-    company : '',
+    company : 'Superfast development with Django Prototyper',
     rept : [
-      // {
-      //   title : '',
-      //   description : ''
-      // }
+      {
+        title : '',
+        description : 'Are you developing with Django ? Imagine creating your apps 10x ..100x times faster!\n' +
+        'I will show audience a live demo of the tool (django-prototyper) that automizes Django projects bootstrap and maitanance. \n' +
+        'That\'s a rich UI tool that allows generate complex db schemes, setups, plugable apps and configurations.'
+      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
@@ -29,10 +31,10 @@ export const SpeakersEn = [
     position : 'Python/JS Developer',
     company : '',
     rept : [
-      // {
-      //   title : '',
-      //   description : ''
-      // }
+      {
+        title : '',
+        description : ''
+      }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
