@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PyCon Odessa is the second Python-focused conference organized in Odessa">
+  <meta name="description" content="${{ index.meta_description }}$">
 
   <link rel="icon" href="public/img/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -14,6 +14,17 @@
   <link rel="stylesheet" href="public/css/app.min.css">
 
 
+  <!--social snippet metadata-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="http://pycon-odessa.org.ua">
+  <meta property="og:title" content="${{ index.meta_title }}$">
+  <meta property="og:description"
+        content="${{ index.meta_description }}$">
+  <meta property="og:image" content="http://pycon-odessa.org.ua/public/img/logo_green.svg">
+  <!--social snippet metadata-->
+
   <script>
     window.CONFIG = {
       BASE_URL : '/',
@@ -22,7 +33,7 @@
   </script>
 
 
-  <title>PyCon Conference</title>
+  <title>${{ index.meta_title }}$</title>
 </head>
 <body itemscope itemtype="http://schema.org/Event">
 
