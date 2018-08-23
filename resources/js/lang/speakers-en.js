@@ -48,5 +48,20 @@ export const SpeakersEn = [
         fatype : 'github'
       },
     ]
-  }
+  },
+ {
+    image : '../public/img/speakers/yehor_nazarkin.jpg',
+    name : 'Yehor Nazarkin',
+    position : 'Software Engineer',
+    company : 'DataRobot',
+    rept : [
+      {
+        title : '',
+        description : ''
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : []
+  },
 ];
