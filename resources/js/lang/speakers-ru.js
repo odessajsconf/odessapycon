@@ -2,8 +2,8 @@ export const SpeakersRu =  [
   {
     image : 'public/img/speakers/vitaliy_kucheryaviy.jpg',
     name : 'Виталий Кучерявый',
-    position : 'Fullstack Developer',
-    company : '',
+    position : 'Software Engineer',
+    company : 'Code On BVBA',
     rept : [
       {
         title : 'Супербыстрая разработка с Django Prototyper',
@@ -28,8 +28,8 @@ export const SpeakersRu =  [
   {
     image : 'public/img/speakers/igor_davydenko.jpg',
     name : 'Игорь Давыденко',
-    position : 'Python/JS Developer',
-    company : '',
+    position : 'Senior Software Engineer',
+    company : 'LifeStreet Media',
     rept : [
       {
         title : '',
