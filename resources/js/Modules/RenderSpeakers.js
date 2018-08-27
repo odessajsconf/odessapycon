@@ -130,8 +130,8 @@ export class RenderSpeakers {
 
         speakerAvatar && $modalSpeakerAvatar.attr('src', speakerAvatar);
         speakerName && $modalNameElement.text(speakerName);
-        speakerPosition && $modalSpeakerPosition.text(speakerPosition);
-        speakerCompany && $modalSpeakerCompany.text(`@${speakerCompany}`);
+        $modalSpeakerPosition.text(speakerPosition);
+        $modalSpeakerCompany.text(speakerCompany ? `@${speakerCompany}`:'');
 
         reportsContent && $modalreportsContainer.html(reportsContent);
 

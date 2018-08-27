@@ -1,4 +1,4 @@
-export const SpeakersRu =  [
+export const SpeakersRu = [
   {
     image : 'public/img/speakers/vitaliy_kucheryaviy.jpg',
     name : 'Виталий Кучерявый',
@@ -22,7 +22,7 @@ export const SpeakersRu =  [
       {
         link : 'https://github.com/vitalik',
         fatype : 'github'
-      },
+      }
     ]
   },
   {
@@ -46,10 +46,10 @@ export const SpeakersRu =  [
       {
         link : 'https://github.com/playpauseandstop',
         fatype : 'github'
-      },
+      }
     ]
   },
- {
+  {
     image : 'public/img/speakers/yehor_nazarkin.jpg',
     name : 'Егор Назаркин',
     position : 'Software Engineer',
@@ -64,4 +64,30 @@ export const SpeakersRu =  [
     socialsRendered : '',
     socials : []
   },
+  {
+    image : 'public/img/speakers/serhii_ruskykh.jpg',
+    name : 'Сергей Руських',
+    position : '',
+    company : '',
+    rept : [
+      {
+        title : 'Можно ли оценить качество кода через его "тестируемость"?',
+        description : 'Работая с тестыми и без низ, я видел разного качетва код. Добавляя тесты, нельзя сказать,' +
+        ' что код сразу станет лучше. Отсутсвие тестов не делает код хуже. Зачем они вообще нужны? Как их можно ' +
+        'использовать правильно?'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://twitter.com/kharum',
+        fatype : 'twitter'
+      },
+      {
+        link : 'https://github.com/srusskih',
+        fatype : 'github'
+      }
+    ]
+  }
 ];
