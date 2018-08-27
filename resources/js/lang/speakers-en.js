@@ -107,7 +107,15 @@ export const SpeakersEn = [
       {
         link : 'https://twitter.com/murkt',
         fatype : 'twitter'
-      }
+      },
+      {
+        link : 'https://www.linkedin.com/in/vsolovyov/',
+        fatype : 'linkedin'
+      },
+      {
+        link : 'https://www.facebook.com/vsevolod.solovyov',
+        fatype : 'facebook'
+      },
     ]
   }
 ];
