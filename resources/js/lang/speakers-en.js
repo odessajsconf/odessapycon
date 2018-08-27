@@ -6,8 +6,8 @@ export const SpeakersEn = [
     company : 'Code On BVBA',
     rept : [
       {
-        title : '',
-        description : 'Are you developing with Django ? Imagine creating your apps 10x ..100x times faster!\n' +
+        title : 'Django-prototyper - from idea to deploy in 5 minuets',
+        description : 'Are you developing with Django? Imagine creating your apps 10x ..100x times faster!\n' +
         'I will show audience a live demo of the tool (django-prototyper) that automizes Django projects bootstrap and maitanance. \n' +
         'That\'s a rich UI tool that allows generate complex db schemes, setups, plugable apps and configurations.'
       }
@@ -87,6 +87,26 @@ export const SpeakersEn = [
       {
         link : 'https://github.com/srusskih',
         fatype : 'github'
+      }
+    ]
+  },
+  {
+    image : 'public/img/speakers/vsevolod_solovyov.jpg',
+    name : 'Vsevolod Solovyov',
+    position : 'Co-founder and CTO',
+    company : 'Prophy Science',
+    rept : [
+      {
+        title : '',
+        description : ''
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://twitter.com/murkt',
+        fatype : 'twitter'
       }
     ]
   }
