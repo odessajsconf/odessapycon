@@ -32,7 +32,7 @@ export const SpeakersRu =  [
     company : 'LifeStreet Media',
     rept : [
       {
-        title : '',
+        title : 'Миграция с Django REST Framework на GraphQL',
         description : ''
       }
     ],

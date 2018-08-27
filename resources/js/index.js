@@ -3,9 +3,6 @@ import { HeaderComponent } from './Components/Header';
 import { RenderSpeakers } from './Modules/RenderSpeakers';
 import { LazyLoading } from './Modules/LazyLoad';
 
-
-
-
 class App {
   constructor(CONFIG) {
     this.CONFIG = CONFIG;
