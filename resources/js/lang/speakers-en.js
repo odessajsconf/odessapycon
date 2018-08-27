@@ -9,7 +9,7 @@ export const SpeakersEn = [
         title : 'Django-prototyper - from idea to deploy in 5 minuets',
         description : 'Are you developing with Django? Imagine creating your apps 10x ..100x times faster!\n' +
         'I will show audience a live demo of the tool (django-prototyper) that automizes Django projects bootstrap and maitanance. \n' +
-        'That\'s a rich UI tool that allows generate complex db schemes, setups, plugable apps and configurations.'
+        'Also will show a new advanced features like automatic admin generation and plugin development.'
       }
     ],
     aboutSpeaker : '',
@@ -65,7 +65,7 @@ export const SpeakersEn = [
     socials : []
   },
   {
-    image : 'public/img/speakers/serhii_ruskykh.jpg',
+    image : '../public/img/speakers/serhii_ruskykh.jpg',
     name : 'Serhii Ruskykh',
     position : '',
     company : '',
@@ -91,7 +91,7 @@ export const SpeakersEn = [
     ]
   },
   {
-    image : 'public/img/speakers/vsevolod_solovyov.jpg',
+    image : '../public/img/speakers/vsevolod_solovyov.jpg',
     name : 'Vsevolod Solovyov',
     position : 'Co-founder and CTO',
     company : 'Prophy Science',
