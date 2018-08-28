@@ -3,8 +3,8 @@ window.jQuery = $;
 require('../vendors/jquery-tmpl/jquery.tmpl.min');
 import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
-import {SpeakersRu} from '../lang/speakers-ru.js'
-import {SpeakersEn} from '../lang/speakers-en.js'
+import {SpeakersRu} from '../lang/ru/speakers-ru.js'
+import {SpeakersEn} from '../lang/en/speakers-en.js'
 
 
 export class RenderSpeakers {
