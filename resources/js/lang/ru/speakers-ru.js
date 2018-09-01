@@ -56,8 +56,10 @@ export const SpeakersRu = [
     company : 'DataRobot',
     rept : [
       {
-        title : '',
-        description : ''
+        title : 'Journey to distributed task queue',
+        description : 'Речь пойдет об эволюции наших подходов и решений в управлении распределенными задачами. ' +
+        'На примере эволюции сервиса от стадии стартапа и гонки за функциональности к стабильной системе с разделением' +
+        ' по типам и приоритетам, возможностью масштабирования и поддержкой клиентов на других языках (программирования)'
       }
     ],
     aboutSpeaker : '',
@@ -115,6 +117,26 @@ export const SpeakersRu = [
       {
         link : 'https://www.facebook.com/vsevolod.solovyov',
         fatype : 'facebook'
+      },
+    ]
+  },
+  {
+    image : 'public/img/speakers/andrii_soldatenko.jpeg',
+    name : 'Андрей Солдатенко',
+    position : 'Senior Data Engineer',
+    company : 'TV Time',
+    rept : [
+      {
+        title : '',
+        description : ''
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://www.linkedin.com/in/andriisoldatenko/',
+        fatype : 'linkedin'
       },
     ]
   }
