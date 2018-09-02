@@ -56,7 +56,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124824638-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'UA-124824638-1');
@@ -158,6 +162,12 @@
           <div class="heading-logo m-t-30">
             <img src="public/img/logo.png?v1.01" alt="OdessaPy Conference" itemprop="image">
             <!--<img src="public/img/logo_py_1.svg" alt="OdessaPy Conference" itemprop="image">-->
+
+            <div class="text-center heading-tickets-btn m-t-40 m-b-50">
+              <a href="https://pycon-odessa.ticketforevent.com/?draft_mode=on" target="_blank"
+                 class="btn btn-light-green">${{ index.menu_tickets }}$</a>
+            </div>
+
           </div>
 
           <div class="heading-sun m-l-30">
@@ -495,7 +505,7 @@
           <div class="sponsors-media-list">
 
 
-            <a href="https://od.itstep.org/" class="sponsors-media-item" title="indigo">
+            <a href="https://od.itstep.org/" class="sponsors-media-item" target="_blank">
               <img src="public/img/media_partners/shag.png" alt="shag">
             </a>
 

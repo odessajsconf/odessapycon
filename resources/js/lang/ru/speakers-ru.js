@@ -68,7 +68,7 @@ export const SpeakersRu = [
   },
   {
     image : 'public/img/speakers/serhii_ruskykh.jpg',
-    name : 'Сергей Руських',
+    name : 'Сергей Русских',
     position : '',
     company : '',
     rept : [
@@ -127,8 +127,19 @@ export const SpeakersRu = [
     company : 'TV Time',
     rept : [
       {
-        title : '',
-        description : ''
+        title : 'Competitive programming using Python',
+        description : 'Competitive programming is really fantastic discipline to improve your programming and math ' +
+        'skills. The idea is very simple given well-known computer science problems, solve them as quickly as possible. ' +
+        'From another point, these challenges have been used frequently in the initial coding interview tasks. Usually ' +
+        'all participants uses C/C++/Java, but last decade we can see increasing trend of contestants who uses Python' +
+        ' in programming challenges. <br> In this talk I’ll show you how to start compete using Python, I’ll share ' +
+        'couple personal tips & tricks how to prepare and start to take part into programming contests using Python. ' +
+        'I’ll show you how to motivate yourself to practise and how to define of class of problem and how to try to ' +
+        'solve it. I’ll demonstrate you some limits of Python and how to avoid it to make correct and fast solutions.' +
+        ' I’ll discuss with you how to master the art of testing and how to crack and generate hidden test cases and ' +
+        'boundaries. Also I’ll explain how to quickly estimate complexity of you solution, without too many proofs ' +
+        'and maths to get desired AC (Accepted).<br> It takes a long time to become a good competitive programmer, ' +
+        'but it is also an opportunity to learn a lot.'
       }
     ],
     aboutSpeaker : '',
