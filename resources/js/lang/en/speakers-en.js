@@ -121,7 +121,7 @@ export const SpeakersEn = [
     ]
   },
   {
-    image : 'public/img/speakers/andrii_soldatenko.jpeg',
+    image : '../public/img/speakers/andrii_soldatenko.jpeg',
     name : 'Andrii Soldatenko',
     position : 'Senior Data Engineer',
     company : 'TV Time',
