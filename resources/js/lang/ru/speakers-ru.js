@@ -40,8 +40,8 @@ export const SpeakersRu = [
     socialsRendered : '',
     socials : [
       {
-        link : 'https://www.facebook.com/playpauseandstop',
-        fatype : 'facebook'
+        link : 'https://twitter.com/playpausenstop',
+        fatype : 'twitter'
       },
       {
         link : 'https://github.com/playpauseandstop',
@@ -149,6 +149,29 @@ export const SpeakersRu = [
         link : 'https://www.linkedin.com/in/andriisoldatenko/',
         fatype : 'linkedin'
       },
+    ]
+  },
+  {
+    image : 'public/img/speakers/alexander_solovyov.jpg',
+    name : 'Александр Соловьёв',
+    position : 'CTO',
+    company : 'Kasta',
+    rept : [
+      {
+        title : 'Make it fast',
+        description : 'У любого проекта в жизни есть две фазы: "хотим еще фич" и "какого перца всё так тормозит". Они ' +
+        'часто переплетаются и не всегда ярко выражены, но никуда не деваются. По странному стечению обстоятельств ' +
+        'фаза №2 случается регулярно; несколько раз в год. И некоторые из итераций этой фазы особенно запоминаются.' +
+        ' Про них и будет рассказ: как мы их моментально (хех) находим и, не побоюсь этого слова, решаем.'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://www.linkedin.com/in/asolovyov/',
+        fatype : 'linkedin'
+      }
     ]
   }
 ];

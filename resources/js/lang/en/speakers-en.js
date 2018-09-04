@@ -40,8 +40,8 @@ export const SpeakersEn = [
     socialsRendered : '',
     socials : [
       {
-        link : 'https://www.facebook.com/playpauseandstop',
-        fatype : 'facebook'
+        link : 'https://twitter.com/playpausenstop',
+        fatype : 'twitter'
       },
       {
         link : 'https://github.com/playpauseandstop',
@@ -150,7 +150,30 @@ export const SpeakersEn = [
       {
         link : 'https://www.linkedin.com/in/andriisoldatenko/',
         fatype : 'linkedin'
-      },
+      }
+    ]
+  },
+  {
+    image : '../public/img/speakers/alexander_solovyov.jpg',
+    name : 'Alexander Solovyov',
+    position : 'CTO',
+    company : 'Kasta',
+    rept : [
+      {
+        title : 'Make it fast',
+        description : 'Any project passes “we need more features” and “omg why is everything so slow” phases during ' +
+        'its life. They intertwine, they are not always pronounced, but they are there. Weirdly enough Kasta gets phase ' +
+        '#2 regularly; few times a year. Some of the iterations are especially remarkable. This story is going to tell' +
+        ' you how we quickly (heh) discover them and, for the lack of a better word - solve them.'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://www.linkedin.com/in/asolovyov/',
+        fatype : 'linkedin'
+      }
     ]
   }
 ];
