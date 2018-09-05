@@ -20,7 +20,7 @@ export const ScheduleEn = [
     icon:'people',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Conference start <br> 1st report'},
+      {author: '', title: 'Conference start  <br> <br>  1st report'},
     ]
   },
   {
