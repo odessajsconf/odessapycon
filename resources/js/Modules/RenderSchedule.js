@@ -52,7 +52,6 @@ export class RenderSchedule {
     let scheduleHtml = '';
 
     $.each(this.schedule, function (i, schedule) {
-      console.log(schedule)
       let talksHtml = '';
 
       $.each(schedule.talks, function (j, talk) {
@@ -62,12 +61,11 @@ export class RenderSchedule {
       schedule.scheduleRendered = talksHtml;
 
       let item = $.tmpl('scheduleRow', schedule)[0].outerHTML;
-      console.log(item)
 
       scheduleHtml += item;
 
     });
-    console.log(scheduleHtml)
+
     $('#schedule-list .schedule-body').html(scheduleHtml);
 
   }

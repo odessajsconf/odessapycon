@@ -33,7 +33,11 @@ export const SpeakersRu = [
     rept : [
       {
         title : 'Миграция с Django REST Framework на GraphQL',
-        description : ''
+        description : 'GraphQL очень популярен в последнее время и я хочу разобраться с причинами. Как перейти с ' +
+        'REST API на GraphQL, просто ли это? Что нужно знать, чтобы переход удался? GraphQL в продакшене - это не ' +
+        'миф и в Python мире есть много библиотек, которые помогут вам мигрировать с REST API на GraphQL. Я расскажу ' +
+        'о них на примере Django REST Framework и Graphene Django. Также я расскажу почему переход на GraphQL сделает ' +
+        'проще жизнь фронтенд разработчиков.'
       }
     ],
     aboutSpeaker : '',
@@ -99,8 +103,10 @@ export const SpeakersRu = [
     company : 'Prophy Science',
     rept : [
       {
-        title : '',
-        description : ''
+        title : 'How to debug. Everything.',
+        description : 'You know that person everybody comes to when the shit hits the fan and that bug is not going to' +
+        ' fix itself? Want to become one? Come to learn about all the skills you\'ll need when your application freezes ' +
+        'in production, leaks memory like crazy or dies under load in fifteen seconds'
       }
     ],
     aboutSpeaker : '',

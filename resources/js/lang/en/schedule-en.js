@@ -4,7 +4,7 @@ export const ScheduleEn = [
     icon:'profile',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Регистрация'},
+      {author: '', title: 'Registration'},
     ]
   },
   {
@@ -12,7 +12,7 @@ export const ScheduleEn = [
     icon:'people',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Открытие'},
+      {author: '', title: 'Conference opening'},
     ]
   },
   {
@@ -20,7 +20,7 @@ export const ScheduleEn = [
     icon:'people',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Начало конференции <br> Доклад 1'},
+      {author: '', title: 'Conference start <br> 1st report'},
     ]
   },
   {
@@ -28,7 +28,7 @@ export const ScheduleEn = [
     icon:'clock',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Перерыв'},
+      {author: '', title: 'Break'},
     ]
   },
   {
@@ -36,7 +36,7 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 2'},
+      {author: '', title: '2nd report'},
     ]
   },
   {
@@ -44,7 +44,7 @@ export const ScheduleEn = [
     icon:'cup',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Кофе-брейк'},
+      {author: '', title: 'Coffee break'},
     ]
   },
   {
@@ -52,7 +52,7 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 3'},
+      {author: '', title: '3rd report'},
     ]
   },
   {
@@ -60,7 +60,7 @@ export const ScheduleEn = [
     icon:'plate',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Обед'},
+      {author: '', title: 'Lunch'},
     ]
   },
   {
@@ -68,7 +68,7 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 4'},
+      {author: '', title: '4th report'},
     ]
   },
   {
@@ -76,7 +76,7 @@ export const ScheduleEn = [
     icon:'clock',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Перерыв'},
+      {author: '', title: 'Break'},
     ]
   },
   {
@@ -84,7 +84,7 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 5'},
+      {author: '', title: '5th report'},
     ]
   },
   {
@@ -92,7 +92,7 @@ export const ScheduleEn = [
     icon:'cup',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Кофе-брейк'},
+      {author: '', title: 'Coffee break'},
     ]
   },
   {
@@ -100,7 +100,7 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 6'},
+      {author: '', title: '6th report'},
     ]
   },
   {
@@ -108,7 +108,7 @@ export const ScheduleEn = [
     icon:'clock',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Перерыв'},
+      {author: '', title: 'Break'},
     ]
   },
   {
@@ -116,7 +116,7 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Доклад 7'},
+      {author: '', title: '7th report'},
     ]
   },
   {
@@ -124,7 +124,7 @@ export const ScheduleEn = [
     icon:'people',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Закрытие конференции'},
+      {author: '', title: 'Conference closing'},
     ]
   },
 ];

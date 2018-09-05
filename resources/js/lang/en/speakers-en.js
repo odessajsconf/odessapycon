@@ -32,8 +32,12 @@ export const SpeakersEn = [
     company : 'LifeStreet Media',
     rept : [
       {
-        title : 'Миграция с Django REST Framework на GraphQL',
-        description : ''
+        title : 'How I migrate from REST API to GraphQL',
+        description : 'Hype around GraphQL now bigger than ever and I want to talk about it. How\'s easy to migrate' +
+        ' from REST API to GraphQL, especially if you are Django developer? What you need to know to succeed? GraphQL ' +
+        'in production is not a myth, and there are libraries to make it easy in Python world. Let\'s talk about them ' +
+        'and path to migrate from Django REST Framework to Django + Graphene. Also I will talk why the migration will ' +
+        'benefit frontend developers as well.'
       }
     ],
     aboutSpeaker : '',
@@ -99,8 +103,10 @@ export const SpeakersEn = [
     company : 'Prophy Science',
     rept : [
       {
-        title : '',
-        description : ''
+        title : 'How to debug. Everything.',
+        description : 'You know that person everybody comes to when the shit hits the fan and that bug is not going to' +
+        ' fix itself? Want to become one? Come to learn about all the skills you\'ll need when your application freezes ' +
+        'in production, leaks memory like crazy or dies under load in fifteen seconds'
       }
     ],
     aboutSpeaker : '',
