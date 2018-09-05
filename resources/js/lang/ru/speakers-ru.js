@@ -78,9 +78,8 @@ export const SpeakersRu = [
     rept : [
       {
         title : 'Можно ли оценить качество кода через его "тестируемость"?',
-        description : 'Работая с тестыми и без низ, я видел разного качетва код. Добавляя тесты, нельзя сказать,' +
-        ' что код сразу станет лучше. Отсутсвие тестов не делает код хуже. Зачем они вообще нужны? Как их можно ' +
-        'использовать правильно?'
+        description : 'Добавив тест, код, не станет сразу же лучше. Отсутствие тестов не делает код хуже. ' +
+        'Как же можно определить тестируемость и качество кода?'
       }
     ],
     aboutSpeaker : '',
@@ -104,9 +103,11 @@ export const SpeakersRu = [
     rept : [
       {
         title : 'How to debug. Everything.',
-        description : 'You know that person everybody comes to when the shit hits the fan and that bug is not going to' +
-        ' fix itself? Want to become one? Come to learn about all the skills you\'ll need when your application freezes ' +
-        'in production, leaks memory like crazy or dies under load in fifteen seconds'
+        description : 'У любого проекта в жизни есть две фазы: "хотим еще фич" и "какого перца всё так тормозит". ' +
+        'Они часто переплетаются и не всегда ярко выражены, но никуда не деваются. По странному стечению ' +
+        'обстоятельств фаза №2 случается регулярно; несколько раз в год. И некоторые из итераций этой фазы' +
+        ' особенно запоминаются. Про них и будет рассказ: как мы их моментально (хех) находим и, не побоюсь ' +
+        'этого слова, решаем.'
       }
     ],
     aboutSpeaker : '',

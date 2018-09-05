@@ -77,10 +77,9 @@ export const SpeakersEn = [
     company : '',
     rept : [
       {
-        title : 'Можно ли оценить качество кода через его "тестируемость"?',
-        description : 'Работая с тестыми и без низ, я видел разного качетва код. Добавляя тесты, нельзя сказать,' +
-        ' что код сразу станет лучше. Отсутсвие тестов не делает код хуже. Зачем они вообще нужны? Как их можно ' +
-        'использовать правильно?'
+        title : 'Can be code quality measured via "testability"?',
+        description : 'Just added test would not make a code better. Code without tests can be great. How we measure ' +
+        'code quality and testability?'
       }
     ],
     aboutSpeaker : '',
