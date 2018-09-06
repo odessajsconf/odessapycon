@@ -103,11 +103,9 @@ export const SpeakersRu = [
     rept : [
       {
         title : 'How to debug. Everything.',
-        description : 'У любого проекта в жизни есть две фазы: "хотим еще фич" и "какого перца всё так тормозит". ' +
-        'Они часто переплетаются и не всегда ярко выражены, но никуда не деваются. По странному стечению ' +
-        'обстоятельств фаза №2 случается регулярно; несколько раз в год. И некоторые из итераций этой фазы' +
-        ' особенно запоминаются. Про них и будет рассказ: как мы их моментально (хех) находим и, не побоюсь ' +
-        'этого слова, решаем.'
+        description : 'You know that person everybody comes to when the shit hits the fan and that bug is not going to' +
+        ' fix itself? Want to become one? Come to learn about all the skills you\'ll need when your application freezes ' +
+        'in production, leaks memory like crazy or dies under load in fifteen seconds'
       }
     ],
     aboutSpeaker : '',
