@@ -1,29 +1,56 @@
 export const SpeakersEn = [
   {
-    image : '../public/img/speakers/vitaliy_kucheryaviy.jpg',
-    name : 'Vitaliy Kucheryaviy',
-    position : 'Software Engineer',
-    company : 'Code On BVBA',
+    image : '../public/img/speakers/caceres.jpg',
+    name : 'Anton Caceres',
+    position : 'CEO',
+    company : 'TECH-5',
     rept : [
       {
-        title : 'Django-prototyper - from idea to deploy in 5 minuets',
-        description : 'Are you developing with Django? Imagine creating your apps 10x ..100x times faster!\n' +
-        'I will show audience a live demo of the tool (django-prototyper) that automizes Django projects bootstrap and maitanance. \n' +
-        'Also will show a new advanced features like automatic admin generation and plugin development.'
+        title : 'Async Python and Web Sockets',
+        description : 'Modern webapps react not just to user actions, but also to server events. Such bi-directional ' +
+        'communication can be easily achieved using Web Sockets, a protocol standardized by W3C to be a default' +
+        ' tool for full-duplex connections on the Web.\n' +
+        '<br><br>' +
+        'Although most of web-frameworks do not support Web Sockets out of the box, Python has multiple options' +
+        ' available making it a piece of cake. In combination with native async tools introduced since Python 3.4,' +
+        ' the code can be very easy and elegant, leaving no excuses for long polling and other hacks. This talk' +
+        ' showcases integrating Web Sockets in Python web-apps, focusing on situations that can make good use of ' +
+        'it and presenting implementations with most popular frameworks.'
       }
     ],
     aboutSpeaker : '',
     socialsRendered : '',
     socials : [
       {
-        link : 'https://www.linkedin.com/in/vitaliykucheraviy/',
-        fatype : 'linkedin'
+        link : 'http://github.com/ma3str0',
+        fatype : 'github'
       },
       {
-        link : 'https://github.com/vitalik',
-        fatype : 'github'
-      }
+        link : 'https://twitter.com/anton_caceres',
+        fatype : 'twitter'
+      },
+      {
+        link : 'https://caceres.me',
+        fatype : 'link'
+      },
     ]
+  },
+  {
+    image : '../public/img/speakers/yehor_nazarkin.jpg',
+    name : 'Yehor Nazarkin',
+    position : 'Software Engineer',
+    company : 'DataRobot',
+    rept : [
+      {
+        title : 'Journey to distributed task queue',
+        description : 'Речь пойдет об эволюции наших подходов и решений в управлении распределенными задачами. ' +
+        'На примере эволюции сервиса от стадии стартапа и гонки за функциональности к стабильной системе с разделением' +
+        ' по типам и приоритетам, возможностью масштабирования и поддержкой клиентов на других языках (программирования)'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : []
   },
   {
     image : '../public/img/speakers/igor_davydenko.jpg',
@@ -49,48 +76,6 @@ export const SpeakersEn = [
       },
       {
         link : 'https://github.com/playpauseandstop',
-        fatype : 'github'
-      }
-    ]
-  },
-  {
-    image : '../public/img/speakers/yehor_nazarkin.jpg',
-    name : 'Yehor Nazarkin',
-    position : 'Software Engineer',
-    company : 'DataRobot',
-    rept : [
-      {
-        title : 'Journey to distributed task queue',
-        description : 'Речь пойдет об эволюции наших подходов и решений в управлении распределенными задачами. ' +
-        'На примере эволюции сервиса от стадии стартапа и гонки за функциональности к стабильной системе с разделением' +
-        ' по типам и приоритетам, возможностью масштабирования и поддержкой клиентов на других языках (программирования)'
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : []
-  },
-  {
-    image : '../public/img/speakers/serhii_ruskykh.jpg',
-    name : 'Serhii Ruskykh',
-    position : '',
-    company : '',
-    rept : [
-      {
-        title : 'Can be code quality measured via "testability"?',
-        description : 'Just added test would not make a code better. Code without tests can be great. How we measure ' +
-        'code quality and testability?'
-      }
-    ],
-    aboutSpeaker : '',
-    socialsRendered : '',
-    socials : [
-      {
-        link : 'https://twitter.com/kharum',
-        fatype : 'twitter'
-      },
-      {
-        link : 'https://github.com/srusskih',
         fatype : 'github'
       }
     ]
@@ -180,5 +165,56 @@ export const SpeakersEn = [
         fatype : 'linkedin'
       }
     ]
-  }
+  },
+  {
+    image : '../public/img/speakers/vitaliy_kucheryaviy.jpg',
+    name : 'Vitaliy Kucheryaviy',
+    position : 'Software Engineer',
+    company : 'Code On BVBA',
+    rept : [
+      {
+        title : 'Django-prototyper - from idea to deploy in 5 minuets',
+        description : 'Are you developing with Django? Imagine creating your apps 10x ..100x times faster!\n' +
+        'I will show audience a live demo of the tool (django-prototyper) that automizes Django projects bootstrap and maitanance. \n' +
+        'Also will show a new advanced features like automatic admin generation and plugin development.'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://www.linkedin.com/in/vitaliykucheraviy/',
+        fatype : 'linkedin'
+      },
+      {
+        link : 'https://github.com/vitalik',
+        fatype : 'github'
+      }
+    ]
+  },
+  {
+    image : '../public/img/speakers/serhii_ruskykh.jpg',
+    name : 'Serhii Ruskykh',
+    position : '',
+    company : '',
+    rept : [
+      {
+        title : 'Can be code quality measured via "testability"?',
+        description : 'Just added test would not make a code better. Code without tests can be great. How we measure ' +
+        'code quality and testability?'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://twitter.com/kharum',
+        fatype : 'twitter'
+      },
+      {
+        link : 'https://github.com/srusskih',
+        fatype : 'github'
+      }
+    ]
+  },
 ];
