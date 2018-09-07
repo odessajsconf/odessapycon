@@ -17,6 +17,7 @@ export class RenderSpeakers {
     this.helpers = new Helpers();
   }
 
+
   _init() {
     if(this.CONFIG.LANG === 'ru') {
       this.speakers = SpeakersRu;
@@ -40,6 +41,7 @@ export class RenderSpeakers {
       '@${company}' +
       '{{/if}}' +
       '</div>' +
+      '<div class="speaker-place">${place}</div>' +
       '<div class="speaker-report">' +
       '{{each rept }} {{html $value.title}} {{if $value.title}}</br> </br>{{/if}}{{/each}}' +
       '</div>' +
@@ -79,6 +81,7 @@ export class RenderSpeakers {
       let $modalBody = $('#speakers-modal'),
         $modalSpeakerAvatar = $modalBody.find('.speakers-modal_img img'),
         $modalNameElement = $modalBody.find('.speaker-name'),
+        $modalPlaceElement = $modalBody.find('.speaker-place'),
         $modalSpeakerPosition = $modalBody.find('.speaker-position .position'),
         $modalSpeakerCompany = $modalBody.find('.speaker-position .company'),
         $modalreportsContainer = $modalBody.find('.speakers-modal_content'),
@@ -116,6 +119,7 @@ export class RenderSpeakers {
           speakerName = speakerData.name,
           speakerPosition = speakerData.position,
           speakerCompany = speakerData.company,
+          speakerPlace = speakerData.place,
           speakerSocials = speakerData.socialsRendered,
           reports = speakerData.rept,
           reportsContent = '',
@@ -132,6 +136,7 @@ export class RenderSpeakers {
         speakerName && $modalNameElement.text(speakerName);
         $modalSpeakerPosition.text(speakerPosition);
         $modalSpeakerCompany.text(speakerCompany ? `@${speakerCompany}`:'');
+        speakerPlace && $modalPlaceElement.text(speakerPlace);
 
         reportsContent && $modalreportsContainer.html(reportsContent);
 

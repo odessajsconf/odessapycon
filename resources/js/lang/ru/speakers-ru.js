@@ -4,6 +4,7 @@ export const SpeakersRu = [
     name : 'Anton Caceres',
     position : 'CEO',
     company : 'TECH-5',
+    place : 'Мюнхен, Германия',
     rept : [
       {
         title : 'Async Python and Web Sockets',
@@ -40,6 +41,7 @@ export const SpeakersRu = [
     name : 'Егор Назаркин',
     position : 'Software Engineer',
     company : 'DataRobot',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'Journey to distributed task queue',
@@ -57,6 +59,7 @@ export const SpeakersRu = [
     name : 'Игорь Давыденко',
     position : 'Senior Software Engineer',
     company : 'LifeStreet Media',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'Миграция с Django REST Framework на GraphQL',
@@ -82,9 +85,10 @@ export const SpeakersRu = [
   },
   {
     image : 'public/img/speakers/vsevolod_solovyov.jpg',
-    name : 'Всеволод Соловйов',
+    name : 'Всеволод Соловьёв',
     position : 'Co-founder and CTO',
     company : 'Prophy Science',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'How to debug. Everything.',
@@ -115,6 +119,7 @@ export const SpeakersRu = [
     name : 'Андрей Солдатенко',
     position : 'Senior Data Engineer',
     company : 'TV Time',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'Competitive programming using Python',
@@ -146,6 +151,7 @@ export const SpeakersRu = [
     name : 'Александр Соловьёв',
     position : 'CTO',
     company : 'Kasta',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'Make it fast',
@@ -169,6 +175,7 @@ export const SpeakersRu = [
     name : 'Виталий Кучерявый',
     position : 'Software Engineer',
     company : 'Code On BVBA',
+    place : 'Харьков, Украина',
     rept : [
       {
         title : 'Django-prototyper - от идеи до деплоя за 5 минут',
@@ -195,6 +202,7 @@ export const SpeakersRu = [
     name : 'Сергей Русских',
     position : '',
     company : '',
+    place : 'Львов, Украина',
     rept : [
       {
         title : 'Можно ли оценить качество кода через его "тестируемость"?',

@@ -4,6 +4,7 @@ export const SpeakersEn = [
     name : 'Anton Caceres',
     position : 'CEO',
     company : 'TECH-5',
+    place : 'Munich, Germany',
     rept : [
       {
         title : 'Async Python and Web Sockets',
@@ -40,6 +41,7 @@ export const SpeakersEn = [
     name : 'Yehor Nazarkin',
     position : 'Software Engineer',
     company : 'DataRobot',
+    place : 'Kiev, Ukraine',
     rept : [
       {
         title : 'Journey to distributed task queue',
@@ -57,6 +59,7 @@ export const SpeakersEn = [
     name : 'Igor Davydenko',
     position : 'Senior Software Engineer',
     company : 'LifeStreet Media',
+    place : 'Kiev, Ukraine',
     rept : [
       {
         title : 'How I migrate from REST API to GraphQL',
@@ -85,6 +88,7 @@ export const SpeakersEn = [
     name : 'Vsevolod Solovyov',
     position : 'Co-founder and CTO',
     company : 'Prophy Science',
+    place : 'Kiev, Ukraine',
     rept : [
       {
         title : 'How to debug. Everything.',
@@ -115,6 +119,7 @@ export const SpeakersEn = [
     name : 'Andrii Soldatenko',
     position : 'Senior Data Engineer',
     company : 'TV Time',
+    place : 'Kiev, Ukraine',
     rept : [
       {
         title : 'Competitive programming using Python',
@@ -148,6 +153,7 @@ export const SpeakersEn = [
     name : 'Alexander Solovyov',
     position : 'CTO',
     company : 'Kasta',
+    place : 'Kiev, Ukraine',
     rept : [
       {
         title : 'Make it fast',
@@ -171,6 +177,7 @@ export const SpeakersEn = [
     name : 'Vitaliy Kucheryaviy',
     position : 'Software Engineer',
     company : 'Code On BVBA',
+    place : 'Kharkov, Ukraine',
     rept : [
       {
         title : 'Django-prototyper - from idea to deploy in 5 minuets',
@@ -197,6 +204,7 @@ export const SpeakersEn = [
     name : 'Serhii Ruskykh',
     position : '',
     company : '',
+    place : 'Lvov, Ukraine',
     rept : [
       {
         title : 'Can be code quality measured via "testability"?',

@@ -27,7 +27,8 @@
   <script>
     window.CONFIG = {
       BASE_URL : '/',
-      LANG : '${{ index.lang }}$'
+      LANG : '${{ index.lang }}$',
+      GOOGLE_API_KEY: 'AIzaSyA4lJHfEHkDb77duDBo2ri7eMtp3AqmZQQ'
     };
   </script>
 
@@ -523,6 +524,9 @@
           </div>
         </div>
       </div>
+
+      <div id="map" class="m-t-50" style="height: 500px; width: 100%"></div>
+
       <div class="user-select-none m-b-20">
         <img class="sponsors-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/sponsors_bg.png"
              alt="seagull">
@@ -530,6 +534,11 @@
     </section>
   </div>
 </div>
+
+<!-- go-up-btn -->
+<a href="#heading" class="go-up-btn"></a>
+<!-- go-up-btn -->
+
 
 <!-- Modals -->
 <div class="remodal speakers-modal" data-remodal-id="speakers-modal" id="speakers-modal">
@@ -539,13 +548,13 @@
       <img src="https://via.placeholder.com/1x1" alt="placeholder">
     </div>
     <div class="speakers-modal_txt ">
-      <div class="speaker-name">
-      </div>
+      <div class="speaker-name"></div>
 
       <div class="speaker-position">
         <span class="position"></span>
         <span class="company"></span>
       </div>
+      <div class="speaker-place"></div>
 
       <div class="speaker-socials"></div>
     </div>
