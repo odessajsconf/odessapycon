@@ -8,6 +8,7 @@
   "menu_speakers": "Speakers",
   "menu_schedule": "Schedule",
   "menu_sponsors": "Sponsorship Proposal",
+  "menu_location": "Location",
   "menu_tickets": "Tickets",
   "heading_date": "September 30, 2018",
   "heading_list_1": "2nd Python conference in Odessa",
@@ -47,8 +48,11 @@
   "sponsors_option_12": "Presentation by the Sponsor’s representative/recruiting session (7-10min)",
   "sponsors_option_13": "Sponsor’s Questions included in the Conference feedback questionnaire",
   "sponsors_option_14": "Discount for conference tickets to company employees",
+  "sponsors_conference_heading": "Conference Partners",
   "sponsors_media_heading": "Media Partners",
   "volunteer": "Become Volunteer",
+  "location_heading": "Location",
+  "location_address": "BC «Solnechnyiy», 5, Sonyachna St.",
   "poup_previous": "Previous",
   "poup_next": "Next"
 }

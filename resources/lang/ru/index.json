@@ -8,6 +8,7 @@
   "menu_speakers": "Доклады",
   "menu_schedule": "Расписание",
   "menu_sponsors": "Спонсоры",
+  "menu_location": "Локация",
   "menu_tickets": "Билеты",
   "heading_date": "30 сентября, 2018",
   "heading_list_1": "2я конференция по Python в Одессе",
@@ -47,8 +48,11 @@
   "sponsors_option_12": "Бесплатные билеты для сотрудников компании (2 человека))",
   "sponsors_option_13": "Присутствие представителя компании на Speakers Dinner (2 человека)",
   "sponsors_option_14": "Скидка на билеты на конференцию сотрудникам компании",
+  "sponsors_conference_heading": "Партнёры Конференции",
   "sponsors_media_heading": "Медиа партнеры",
   "volunteer": "Стать Волонтером",
+  "location_heading": "Локация",
+  "location_address": "БЦ «Солнечный» ул. Солнечная, 5",
   "poup_previous": "Назад",
   "poup_next": "Далее"
 }

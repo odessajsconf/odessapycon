@@ -100,6 +100,9 @@
             <li><a href="#sponsors">
               ${{ index.menu_sponsors }}$
             </a></li>
+            <li><a href="#location">
+              ${{ index.menu_location }}$
+            </a></li>
             <li><a href="https://pycon-odessa.ticketforevent.com/?draft_mode=on" target="_blank" class="link">
               ${{ index.menu_tickets }}$
             </a></li>
@@ -378,119 +381,6 @@
           <br>
         </div>
 
-        <!--<div class="table-container m-t-10">-->
-        <!--<table class="table">-->
-        <!--<thead>-->
-        <!--<tr>-->
-        <!--<th></th>-->
-        <!--<th>Bronze</th>-->
-        <!--<th>Silver</th>-->
-        <!--<th>Gold</th>-->
-        <!--<th>General</th>-->
-        <!--</tr>-->
-
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_1 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_2 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_3 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_4 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_5 }}$</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_6 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_7 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_8 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_9 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_10 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_11 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_12 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_13 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td></td>-->
-        <!--<td>+</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-        <!--<td>${{ index.sponsors_option_14 }}$</td>-->
-        <!--<td></td>-->
-        <!--<td>5%</td>-->
-        <!--<td>10%</td>-->
-        <!--<td>15%</td>-->
-        <!--</tr>-->
-        <!--</thead>-->
-        <!--</table>-->
-        <!--</div>-->
-
         <div class="m-t-50 h4 text-center sponsors-text">
           <p>
             ${{ index.sponsors_txt_2 }}$
@@ -517,11 +407,27 @@
           </div>
         </div>
 
+        <!-- Conference partners-->
+        <div class="m-t-80">
+          <h3 class="text-center m-b-30">${{ index.sponsors_conference_heading }}$</h3>
+
+          <div class="sponsors-media-list">
+            <a href="https://code-on.be/" class="sponsors-media-item" target="_blank">
+              <img src="public/img/conference_partners/code-on.jpg" alt="code-on">
+            </a>
+            <a href="https://tech-5.de/" class="sponsors-media-item" target="_blank">
+              <img src="public/img/conference_partners/teck-5.png" alt="teck-5">
+            </a>
+
+          </div>
+        </div>
+        <!-- Conference partners-->
+
+        <!-- Media Partners -->
         <div class="m-t-80">
           <h3 class="text-center m-b-30">${{ index.sponsors_media_heading }}$</h3>
 
           <div class="sponsors-media-list">
-
 
             <a href="https://od.itstep.org/" class="sponsors-media-item" target="_blank">
               <img src="public/img/media_partners/shag.png" alt="shag">
@@ -529,7 +435,16 @@
 
           </div>
         </div>
+        <!-- Media Partners -->
       </div>
+    </section>
+
+    <section id="location">
+      <div class="h2">
+        ${{ index.location_heading }}$
+      </div>
+
+      <h3 class="text-center m-b-30">${{ index.location_address }}$</h3>
 
       <div id="map" class="m-t-50" style="height: 500px; width: 100%"></div>
 
