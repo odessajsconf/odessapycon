@@ -1,9 +1,10 @@
 import $ from 'jquery';
 import { HeaderComponent } from './Components/Header';
-import { RenderSpeakers } from './Modules/RenderSpeakers';
+// import { RenderSpeakers } from './Modules/RenderSpeakers';
 import { LazyLoading } from './Modules/LazyLoad';
 import { RenderSchedule } from './Modules/RenderSchedule';
 import { Map } from "./Components/Map";
+import { SpeakersComponent } from './Components/Speakers';
 
 class App {
   constructor(CONFIG) {
@@ -14,7 +15,7 @@ class App {
   }
 
   _initModules() {
-    new RenderSpeakers();
+    // new RenderSpeakers();
     new RenderSchedule();
     new LazyLoading();
     this.map = new Map({
@@ -24,6 +25,7 @@ class App {
 
   _initComponents() {
     new HeaderComponent();
+    new SpeakersComponent();
   }
 }
 
