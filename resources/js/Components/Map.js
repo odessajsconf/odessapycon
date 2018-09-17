@@ -3,8 +3,6 @@ window.jQuery = $;
 require('../vendors/jquery-tmpl/jquery.tmpl.min');
 import { GoogleApiModule } from '../Modules/GoogleApi';
 import { Helpers } from '../Helpers';
-// import { PlacesEn } from '../lang/en/palces-en';
-// import { PlacesRu } from '../lang/ru/palces-ru';
 
 export class Map {
 
@@ -101,8 +99,8 @@ export class Map {
       this.addMarkerWithTimeout(this.places[i], i * 200);
     }
     //крайние точки
-    this.bounds.extend({lat : 46.429, lng : 30.734051});
-    this.bounds.extend({lat : 46.45026, lng : 30.734051});
+    this.bounds.extend({lat : 46.429, lng : 30.749558});
+    this.bounds.extend({lat : 46.45026, lng : 30.749558});
     this.map.fitBounds(this.bounds);
   }
 
