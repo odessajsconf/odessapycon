@@ -34,6 +34,15 @@
   text-align: center;
   //max-width: 200px;
 
+  &.sponsors-media-wide {
+    flex: 0 0 25%;
+    max-width: 25%;
+
+    img {
+      max-width: 330px;
+    }
+  }
+
   img {
     display: inline-block;
     margin: 0 auto;
@@ -76,5 +85,10 @@
   .sponsors-media-item{
     flex: 0 0 50%;
     max-width: 50%;
+
+    &.sponsors-media-wide {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
   }
 }
