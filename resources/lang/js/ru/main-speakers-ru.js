@@ -1,10 +1,10 @@
-export const SpeakersEn = [
+export const MainSpeakersRu = [
   {
-    image : '../public/img/speakers/caceres.jpg',
+    image : 'public/img/speakers/caceres.jpg',
     name : 'Anton Caceres',
     position : 'CEO',
     company : 'TECH-5',
-    place : 'Munich, Germany',
+    place : 'Мюнхен, Германия',
     rept : [
       {
         title : 'Async Python and Web Sockets',
@@ -37,11 +37,11 @@ export const SpeakersEn = [
     ]
   },
   {
-    image : '../public/img/speakers/yehor_nazarkin.jpg',
-    name : 'Yehor Nazarkin',
+    image : 'public/img/speakers/yehor_nazarkin.jpg',
+    name : 'Егор Назаркин',
     position : 'Software Engineer',
     company : 'DataRobot',
-    place : 'Kiev, Ukraine',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'Journey to distributed task queue',
@@ -55,19 +55,19 @@ export const SpeakersEn = [
     socials : []
   },
   {
-    image : '../public/img/speakers/igor_davydenko.jpg',
-    name : 'Igor Davydenko',
+    image : 'public/img/speakers/igor_davydenko.jpg',
+    name : 'Игорь Давыденко',
     position : 'Senior Software Engineer',
     company : 'LifeStreet Media',
-    place : 'Kiev, Ukraine',
+    place : 'Киев, Украина',
     rept : [
       {
-        title : 'How I migrate from REST API to GraphQL',
-        description : 'Hype around GraphQL now bigger than ever and I want to talk about it. How\'s easy to migrate' +
-        ' from REST API to GraphQL, especially if you are Django developer? What you need to know to succeed? GraphQL ' +
-        'in production is not a myth, and there are libraries to make it easy in Python world. Let\'s talk about them ' +
-        'and path to migrate from Django REST Framework to Django + Graphene. Also I will talk why the migration will ' +
-        'benefit frontend developers as well.'
+        title : 'Миграция с Django REST Framework на GraphQL',
+        description : 'GraphQL очень популярен в последнее время и я хочу разобраться с причинами. Как перейти с ' +
+        'REST API на GraphQL, просто ли это? Что нужно знать, чтобы переход удался? GraphQL в продакшене - это не ' +
+        'миф и в Python мире есть много библиотек, которые помогут вам мигрировать с REST API на GraphQL. Я расскажу ' +
+        'о них на примере Django REST Framework и Graphene Django. Также я расскажу почему переход на GraphQL сделает ' +
+        'проще жизнь фронтенд разработчиков.'
       }
     ],
     aboutSpeaker : '',
@@ -84,11 +84,11 @@ export const SpeakersEn = [
     ]
   },
   {
-    image : '../public/img/speakers/vsevolod_solovyov.jpg',
-    name : 'Vsevolod Solovyov',
+    image : 'public/img/speakers/vsevolod_solovyov.jpg',
+    name : 'Всеволод Соловьёв',
     position : 'Co-founder and CTO',
     company : 'Prophy Science',
-    place : 'Kiev, Ukraine',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'How to debug. Everything.',
@@ -111,15 +111,15 @@ export const SpeakersEn = [
       {
         link : 'https://www.facebook.com/vsevolod.solovyov',
         fatype : 'facebook'
-      }
+      },
     ]
   },
   {
-    image : '../public/img/speakers/andrii_soldatenko.jpeg',
-    name : 'Andrii Soldatenko',
+    image : 'public/img/speakers/andrii_soldatenko.jpeg',
+    name : 'Андрей Солдатенко',
     position : 'Senior Data Engineer',
     company : 'TV Time',
-    place : 'Kiev, Ukraine',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'Competitive programming using Python',
@@ -127,15 +127,13 @@ export const SpeakersEn = [
         'skills. The idea is very simple given well-known computer science problems, solve them as quickly as possible. ' +
         'From another point, these challenges have been used frequently in the initial coding interview tasks. Usually ' +
         'all participants uses C/C++/Java, but last decade we can see increasing trend of contestants who uses Python' +
-        ' in programming challenges. <br> <br> ' +
-        'In this talk I’ll show you how to start compete using Python, I’ll share ' +
+        ' in programming challenges. <br> In this talk I’ll show you how to start compete using Python, I’ll share ' +
         'couple personal tips & tricks how to prepare and start to take part into programming contests using Python. ' +
         'I’ll show you how to motivate yourself to practise and how to define of class of problem and how to try to ' +
         'solve it. I’ll demonstrate you some limits of Python and how to avoid it to make correct and fast solutions.' +
         ' I’ll discuss with you how to master the art of testing and how to crack and generate hidden test cases and ' +
         'boundaries. Also I’ll explain how to quickly estimate complexity of you solution, without too many proofs ' +
-        'and maths to get desired AC (Accepted).<br><br> ' +
-        'It takes a long time to become a good competitive programmer, ' +
+        'and maths to get desired AC (Accepted).<br> It takes a long time to become a good competitive programmer, ' +
         'but it is also an opportunity to learn a lot.'
       }
     ],
@@ -145,22 +143,22 @@ export const SpeakersEn = [
       {
         link : 'https://www.linkedin.com/in/andriisoldatenko/',
         fatype : 'linkedin'
-      }
+      },
     ]
   },
   {
-    image : '../public/img/speakers/alexander_solovyov.jpg',
-    name : 'Alexander Solovyov',
+    image : 'public/img/speakers/alexander_solovyov.jpg',
+    name : 'Александр Соловьёв',
     position : 'CTO',
     company : 'Kasta',
-    place : 'Kiev, Ukraine',
+    place : 'Киев, Украина',
     rept : [
       {
         title : 'Make it fast',
-        description : 'Any project passes “we need more features” and “omg why is everything so slow” phases during ' +
-        'its life. They intertwine, they are not always pronounced, but they are there. Weirdly enough Kasta gets phase ' +
-        '#2 regularly; few times a year. Some of the iterations are especially remarkable. This story is going to tell' +
-        ' you how we quickly (heh) discover them and, for the lack of a better word - solve them.'
+        description : 'У любого проекта в жизни есть две фазы: "хотим еще фич" и "какого перца всё так тормозит". Они ' +
+        'часто переплетаются и не всегда ярко выражены, но никуда не деваются. По странному стечению обстоятельств ' +
+        'фаза №2 случается регулярно; несколько раз в год. И некоторые из итераций этой фазы особенно запоминаются.' +
+        ' Про них и будет рассказ: как мы их моментально (хех) находим и, не побоюсь этого слова, решаем.'
       }
     ],
     aboutSpeaker : '',
@@ -173,17 +171,17 @@ export const SpeakersEn = [
     ]
   },
   {
-    image : '../public/img/speakers/vitaliy_kucheryaviy.jpg',
-    name : 'Vitaliy Kucheryaviy',
+    image : 'public/img/speakers/vitaliy_kucheryaviy.jpg',
+    name : 'Виталий Кучерявый',
     position : 'Software Engineer',
     company : 'Code On BVBA',
-    place : 'Kharkov, Ukraine',
+    place : 'Харьков, Украина',
     rept : [
       {
-        title : 'Django-prototyper - from idea to deploy in 5 minuets',
-        description : 'Are you developing with Django? Imagine creating your apps 10x ..100x times faster!\n' +
-        'I will show audience a live demo of the tool (django-prototyper) that automizes Django projects bootstrap and maitanance. \n' +
-        'Also will show a new advanced features like automatic admin generation and plugin development.'
+        title : 'Django-prototyper - от идеи до деплоя за 5 минут',
+        description : 'Разрабатываете на Django ? Представьте, что вы сможете создавать ваши приложения в 10-100 раз быстрее!\n' +
+        'Я покажу live-демо утилиту которая автоматизирует создание и доработку django проектов.\n' +
+        'Так же покажу новые фичи автоматической генерации админки и разработку собственных плагинов'
       }
     ],
     aboutSpeaker : '',
@@ -200,16 +198,16 @@ export const SpeakersEn = [
     ]
   },
   {
-    image : '../public/img/speakers/serhii_ruskykh.jpg',
-    name : 'Serhii Ruskykh',
+    image : 'public/img/speakers/serhii_ruskykh.jpg',
+    name : 'Сергей Русских',
     position : '',
     company : '',
-    place : 'Lvov, Ukraine',
+    place : 'Львов, Украина',
     rept : [
       {
-        title : 'Can be code quality measured via "testability"?',
-        description : 'Just added test would not make a code better. Code without tests can be great. How we measure ' +
-        'code quality and testability?'
+        title : 'Можно ли оценить качество кода через его "тестируемость"?',
+        description : 'Добавив тест, код, не станет сразу же лучше. Отсутствие тестов не делает код хуже. ' +
+        'Как же можно определить тестируемость и качество кода?'
       }
     ],
     aboutSpeaker : '',

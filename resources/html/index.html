@@ -361,8 +361,35 @@
       <div class="container">
         <div class="h2">${{ index.speakers_head }}$</div>
 
-        <div class="flex j-c-space-around speakers-list" id="speakers-list">
+        <div class="h2">
+          ${{ index.speakers_head }}$
         </div>
+
+        <div class="h3 m-t-40 text-center">
+          ${{ index.speakers_preparty_head }}$
+        </div>
+
+        <div class="h4 text-center m-t-20 speakers-desc">
+          ${{ index.speakers_preparty_desc }}$
+        </div>
+
+        <div class="m-t-30 text-center">
+          <a href="https://goo.gl/forms/1yKKDXrCvdu5AcoF2" class="btn" target="_blank">
+            ${{ index.speakers_preparty_registration }}$
+          </a>
+        </div>
+
+        <div class="speakers-preparty-reg notation fw-400 text-center m-0a m-t-30">
+          ${{ index.speakers_preparty_reg_note }}$
+        </div>
+
+        <div class="flex j-c-space-around speakers-list speakers-list-preparty" id="preparty-speakers-list"></div>
+
+        <div class="h4 text-center m-t-70 speakers-desc">
+          ${{ index.speakers_main_desc }}$
+        </div>
+
+        <div class="flex j-c-space-around speakers-list" id="main-speakers-list"></div>
       </div>
       <div class="flex user-select-none">
         <img class="speakers-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/speakers_bg.png"
@@ -563,13 +590,13 @@
 
 
 <!-- Modals -->
-<div class="remodal speakers-modal" data-remodal-id="speakers-modal" id="speakers-modal">
+<div class="remodal speakers-modal" data-remodal-id="preparty-speakers-modal" id="preparty-speakers-modal">
   <button data-remodal-action="close" class="remodal-close"></button>
   <div class="flex speakers-modal_heading">
     <div class="speakers-modal_img">
-      <img src="https://via.placeholder.com/1x1" alt="placeholder">
+      <img src="https://via.placeholder.com/1x1" data-src="public/img/speakers/andrey_grachev.png" alt="">
     </div>
-    <div class="speakers-modal_txt ">
+    <div class="speakers-modal_txt">
       <div class="speaker-name"></div>
 
       <div class="speaker-position">
@@ -584,7 +611,6 @@
 
   <div class="speakers-modal_content m-t-40 m-b-50"></div>
 
-  <!--<button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>-->
   <div class="flex j-c-space-between">
     <button class="remodal-prev">
       ${{ index.poup_previous }}$
@@ -594,6 +620,38 @@
     </button>
   </div>
 </div>
+
+<div class="remodal speakers-modal" data-remodal-id="main-speakers-modal" id="main-speakers-modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="flex speakers-modal_heading">
+    <div class="speakers-modal_img">
+      <img src="https://via.placeholder.com/1x1" data-src="public/img/speakers/andrey_grachev.png" alt="">
+    </div>
+    <div class="speakers-modal_txt">
+      <div class="speaker-name"></div>
+
+      <div class="speaker-position">
+        <span class="position"></span>
+        <span class="company"></span>
+      </div>
+      <div class="speaker-place"></div>
+
+      <div class="speaker-socials"></div>
+    </div>
+  </div>
+
+  <div class="speakers-modal_content m-t-40 m-b-50"></div>
+
+  <div class="flex j-c-space-between">
+    <button class="remodal-prev">
+      ${{ index.poup_previous }}$
+    </button>
+    <button class="remodal-next">
+      ${{ index.poup_next }}$
+    </button>
+  </div>
+</div>
+<!-- Modals -->
 
 <script src="public/js/index.js"></script>
 
