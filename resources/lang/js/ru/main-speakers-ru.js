@@ -223,4 +223,38 @@ export const MainSpeakersRu = [
       }
     ]
   },
+  {
+    image : 'public/img/speakers/alexey_milogradov.jpg',
+    name : 'Алексей Милоградов',
+    position : 'Python Developer',
+    company : 'Steelkiwi',
+    place : 'Украина, Винница',
+    rept : [
+      {
+        title : 'Критический взгляд на Django ORM [Ru]',
+        description : 'Доклад о том, какую позицию занимают ORM в разработке приложений и о том майндсете, который лучше' +
+        ' применять для лучше продуктивности'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://twitter.com/AMilogradov',
+        fatype : 'twitter'
+      },
+      {
+        link : 'https://github.com/a-milogradov',
+        fatype : 'github'
+      },
+      {
+        link : 'https://www.linkedin.com/in/alexey-milogradov-60aa6480/',
+        fatype : 'linkedin'
+      },
+      {
+        link : 'mailto:alexey.milogradov@gmail.com',
+        fatype : 'envelope'
+      }
+    ]
+  },
 ];

@@ -225,4 +225,38 @@ export const MainSpeakersEn = [
       }
     ]
   },
+  {
+    image : '../public/img/speakers/alexey_milogradov.jpg',
+    name : 'Alexey Milogradov',
+    position : 'Python Developer',
+    company : 'Steelkiwi',
+    place : 'Ukraine, Vinnytsya',
+    rept : [
+      {
+        title : 'Django ORM: General Overview [Ru]',
+        description : 'The talk is about how ORM fits in business application development and about productive mindset' +
+        ' when using Django ORM'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://twitter.com/AMilogradov',
+        fatype : 'twitter'
+      },
+      {
+        link : 'https://github.com/a-milogradov',
+        fatype : 'github'
+      },
+      {
+        link : 'https://www.linkedin.com/in/alexey-milogradov-60aa6480/',
+        fatype : 'linkedin'
+      },
+      {
+        link : 'mailto:alexey.milogradov@gmail.com',
+        fatype : 'envelope'
+      }
+    ]
+  },
 ];
