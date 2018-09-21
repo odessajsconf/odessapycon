@@ -259,4 +259,66 @@ export const MainSpeakersEn = [
       }
     ]
   },
+  {
+    image : '../public/img/speakers/vitaliy_androsenko.jpg',
+    name : 'Vitaliy Androsenko',
+    position : 'Team Lead',
+    company : 'Ciklum',
+    place : 'Kharkov, Ukraine',
+    rept : [
+      {
+        title : 'SQLAachemy: practic magic [Ru]',
+        description : 'В докладе будут описаны интересные фишки алхимии, про которые все забывают сразу после ' +
+        'прочтения документации, а так же подняты вопросы обхода наиболее опасных ям для начинающих магов'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : 'https://github.com/4kpt',
+        fatype : 'github'
+      },
+      {
+        link : 'https://www.linkedin.com/in/%D0%B2%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B9-%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D1%81%D0%B5%D0%BD%D0%BA%D0%BE-baaa5110b/',
+        fatype : 'linkedin'
+      },
+      {
+        link : 'mailto:muataimoto@gmail.com',
+        fatype : 'envelope'
+      }
+    ]
+  },
+  {
+    image : '../public/img/speakers/dmitry_kondratenko.jpg',
+    name : 'Dmitry Kondratenko',
+    position : 'Team lead/Tech lead',
+    company : 'Competera',
+    place : 'Kyiv, Ukraine',
+    rept : [
+      {
+        title : 'Парсинг с помощью Python фреймворка Scrapy в промышленных масштабаx [Ru]',
+        description : '"В данном докладе будет открыта тема модификации фреймворка Scrapy как основного фреймворка' +
+        ' для потреб промышленного парсинга. Почему выбор пал именно на данный фреймворк. Будет рассказано про ' +
+        'практические применения на объемах более 10 млн ссылок в день. Как быстро и эффективно парсить такие объем,' +
+        ' а самое главное дебаг и суппорт на таком к-ве данных.'
+      }
+    ],
+    aboutSpeaker : '',
+    socialsRendered : '',
+    socials : [
+      {
+        link : ' https://www.facebook.com/dima.kondratenko.16',
+        fatype : 'facebook'
+      },
+      {
+        link : 'https://www.linkedin.com/feed/?trk=',
+        fatype : 'linkedin'
+      },
+      {
+        link : 'mailto:dk@competera.net',
+        fatype : 'envelope'
+      }
+    ]
+  },
 ];
