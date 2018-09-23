@@ -317,7 +317,14 @@
                     ${{ index.about_advantages_5 }}$
                   </div>
                 </li>
-
+                <li class="about-advantage-item">
+                  <div class="about-advantage-icon">
+                    <i class="fa fa-video-camera"></i>
+                  </div>
+                  <div class="about-advantage-text">
+                    ${{ index.about_advantages_6 }}$
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -359,7 +366,7 @@
 
     <section id="speakers" class="speakers flex f-d-column j-c-space-between">
       <div class="container">
-        
+
 
         <div class="h2">
           ${{ index.speakers_head }}$
@@ -370,6 +377,7 @@
         </div>
 
         <div class="h4 text-center m-t-20 speakers-desc">
+          ${{ index.speakers_preparty_theme }}$ <br><br>
           ${{ index.speakers_preparty_desc }}$
         </div>
 
@@ -469,6 +477,40 @@
           </div>
         </div>
 
+        <!-- Sponsors -->
+        <div class="m-t-80">
+          <h3 class="text-center m-b-30">${{ index.sponsors_head }}$</h3>
+        </div>
+
+        <!-- Silver sponsors-->
+        <div class="m-t-30">
+          <h4 class="sponsors-type text-center m-b-10">${{ index.sponsors_silver }}$</h4>
+
+          <div class="sponsors-media-list">
+            <a href="https://beetroot.se/" class="sponsors-media-item" target="_blank">
+              <img src="public/img/conference_partners/Beetroot.png" alt="Beetroot">
+            </a>
+
+            <a href="http://competera.net/" class="sponsors-media-item" target="_blank">
+              <img src="public/img/conference_partners/competera.png" alt="Competera">
+            </a>
+          </div>
+        </div>
+        <!-- Silver sponsors-->
+        <!-- Sponsors-->
+
+        <!-- HR partners-->
+        <div class="m-t-80">
+          <h3 class="text-center m-b-30">${{ index.sponsors_hr_heading }}$</h3>
+
+          <div class="sponsors-media-list">
+            <a href="https://rabota.ua/" class="sponsors-media-item sponsors-media-wide" target="_blank">
+              <img src="public/img/hr_partners/rabota_ua.jpg" alt="rabota.ua">
+            </a>
+          </div>
+        </div>
+        <!-- HR partners-->
+
         <!-- Conference partners-->
         <div class="m-t-80">
           <h3 class="text-center m-b-30">${{ index.sponsors_conference_heading }}$</h3>
@@ -484,40 +526,6 @@
           </div>
         </div>
         <!-- Conference partners-->
-
-        <!-- HR partners-->
-        <div class="m-t-80">
-          <h3 class="text-center m-b-30">${{ index.sponsors_hr_heading }}$</h3>
-
-          <div class="sponsors-media-list">
-            <a href="https://rabota.ua/" class="sponsors-media-item sponsors-media-wide" target="_blank">
-              <img src="public/img/hr_partners/rabota_ua.jpg" alt="rabota.ua">
-            </a>
-          </div>
-        </div>
-        <!-- HR partners-->
-        
-        <!-- Sponsors heading-->
-        <div class="m-t-80">
-            <h3 class="text-center m-b-30">${{ index.sponsors_head }}$</h3>
-        </div>
-        <!-- Sponsors heading-->
-        
-        <!-- Silver sponsors-->
-        <div class="m-t-30">
-          <h4 class="sponsors-type text-center m-b-10">${{ index.sponsors_silver }}$</h4>
-
-          <div class="sponsors-media-list">
-            <a href="https://beetroot.se/" class="sponsors-media-item" target="_blank">
-              <img src="public/img/conference_partners/Beetroot.png" alt="Beetroot">
-            </a>
-            
-            <a href="http://competera.net/" class="sponsors-media-item" target="_blank">
-              <img src="public/img/conference_partners/competera.png" alt="Competera">
-            </a>
-          </div>
-        </div>
-        <!-- Silver sponsors-->
 
         <!-- Media Partners -->
         <div class="m-t-80">
@@ -568,6 +576,18 @@
           </div>
         </div>
         <!-- Media Partners -->
+
+        <!-- Tech sponsor -->
+        <div class="m-t-80">
+          <h3 class="text-center m-b-30">${{ index.sponsors_tech_heading }}$</h3>
+
+          <div class="sponsors-media-list">
+            <a href="hhttps://vega.ua/" class="sponsors-media-item sponsors-media-wide" target="_blank">
+              <img src="public/img/sponsors/vega.jpg" alt="vega">
+            </a>
+          </div>
+        </div>
+        <!-- Tech sponsor -->
       </div>
     </section>
 
@@ -586,23 +606,52 @@
       <div class="container">
 
         <div class="m-t-70 text-center volunteer-footer">
-          <a href="https://goo.gl/forms/sJA5sZwPSyenM4uH2" class="btn">
+          <a href="https://goo.gl/forms/sJA5sZwPSyenM4uH2" class="btn" target="_blank">
             ${{ index.volunteer }}$
           </a>
         </div>
+        <div class="m-t-40  text-center volunteer-footer">
+          <a href="public/docs/Code_of_Conduct_OdessaPY_Сonference.pdf" class="btn m-10" target="_blank">
+            ${{ index.code_conduct }}$
+          </a>
+        </div>
 
-        <!--<div class="m-t-40  text-center volunteer-footer">-->
-        <!--<a href="javascript: void(0)" class="btn m-10">-->
-        <!--${{ index.code_conduct }}$-->
-        <!--</a>-->
-        <!--</div>-->
       </div>
 
-      <div class="user-select-none m-b-20">
-        <img class="sponsors-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/sponsors_bg.png"
-             alt="seagull">
+    </section>
+
+    <section id="history">
+      <div class="container">
+        <div class="h2">
+          ${{ index.history_head }}$
+        </div>
+
+        <div class="history-list">
+          <a href="http://odessajs.org/2013/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2013.jpg" alt="OdessaJS'2013">
+          </a>
+          <a href="http://odessajs.org/2014/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2014.jpg" alt="OdessaJS'2014">
+          </a>
+          <a href="http://odessajs.org/2015/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2015.jpg" alt="OdessaJS'2015">
+          </a>
+          <a href="http://odessajs.org/2016/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2016.jpg" alt="OdessaJS'2016">
+          </a>
+          <a href="http://odessajs.org/2017/index.html" class="history-item" target="_blank">
+            <img src="public/img/history/2017.jpg" alt="OdessaJS'2017">
+          </a>
+          <a href="http://odessajs.org/" class="history-item" target="_blank">
+            <img src="public/img/history/2018.jpg" alt="OdessaJS'2018">
+          </a>
+        </div>
       </div>
     </section>
+    <div class="user-select-none m-b-20">
+      <img class="sponsors-bg-img" src="https://via.placeholder.com/1x1" data-src="public/img/sponsors_bg.png"
+           alt="seagull">
+    </div>
   </div>
 </div>
 

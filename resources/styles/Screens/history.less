@@ -24,9 +24,42 @@
   img {
     display: block;
     width: 100%;
+    filter: grayscale(1);
+  }
+}
+
+.history-list {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.history-item {
+  display: inline-block;
+  width: 25%;
+  padding: 15px;
+  transition: .2s;
+
+  &:hover {
+    opacity: .85;
   }
 
+  img {
+    display: inline-block;
+    width: 100%;
+    transition: .2s;
+    filter: grayscale(1);
+  }
 }
+
+@media @tablet {
+
+  .history-item {
+    width: 33%;
+  }
+}
+
 
 @media @mobileLg {
 
@@ -52,7 +85,11 @@
         margin-bottom: 0;
       }
     }
+  }
 
+  .history-item {
+    width: 100%;
+    max-width: 400px;
   }
 }
 
