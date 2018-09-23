@@ -40,9 +40,11 @@
   width: 25%;
   padding: 15px;
   transition: .2s;
+  text-decoration: none;
 
   &:hover {
     opacity: .85;
+    color: @color_blue;
   }
 
   img {
@@ -51,6 +53,22 @@
     transition: .2s;
     filter: grayscale(1);
   }
+
+  &:hover {
+    .history-item-title {
+      text-decoration: underline;
+      color: @color_blue;
+    }
+  }
+}
+
+.history-item-title {
+  margin-top: 10px;
+  .font-size(18);
+  text-decoration: none;
+  font-weight: bold;
+  color: @color_blue;
+  transition: .2s;
 }
 
 @media @tablet {
