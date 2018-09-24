@@ -6,19 +6,24 @@
   //background-size: 106%;
   //height: 100vh;
   //min-height: 600px;
+  padding: 110px 0 0;
 }
 
 .heading-bg-img-m,
 .heading-bg-img{
   display: block;
   width: 100%;
-  margin-top: -42vh;
+  //margin-top: -42vh;
   user-select: none;
+
+
+  &.collage {
+  }
 }
 
 .heading-bg-img-m {
-  display: none;
-  margin-top: 0;
+  //display: none;
+  //margin-top: 0;
 }
 
 
@@ -119,7 +124,7 @@
 
 @media screen and (max-width: 1400px) {
   .heading {
-    min-height: 700px;
+    //min-height: 700px;
   }
   .heading-logo {
     max-width: 300px;
@@ -142,9 +147,9 @@
     }
 
   }
-  .heading-bg-img {
-    margin-top: -50vh;
-  }
+  //.heading-bg-img {
+  //  margin-top: -50vh;
+  //}
 }
 
 @media @laptopMd {
@@ -164,10 +169,10 @@
   .heading-logo {
     max-width: 320px;
   }
-  .heading-bg-img,
-  .heading-sun {
-    display: none;
-  }
+  //.heading-bg-img,
+  //.heading-sun {
+  //  display: none;
+  //}
 
   .heading-bg-img-m {
     display: block;
@@ -193,15 +198,16 @@
 }
 
 @media @tablet {
-  .heading-bg-img {
-    margin-top: 40px;
+  .heading {
+    padding: 90px 0 0;
+    //margin-top: 40px;
+    padding-bottom: 0!important;
   }
 }
 
 @media @mobileLg {
   .heading{
-    min-height: 610px;
-    padding-bottom: 0!important;
+    //min-height: 610px;
 
     .container {
       display: block;
