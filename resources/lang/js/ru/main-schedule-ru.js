@@ -1,10 +1,11 @@
-export const ScheduleRu = [
+export const MainScheduleRu = [
   {
     time:'9.00-10.00',
     icon:'profile',
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Регистрация'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -12,7 +13,8 @@ export const ScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Егор Назаркин', title: 'Journey to distributed task queue'},
+      {author: 'Роман Саченко', title: 'Безопасность в Node.js'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -21,6 +23,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Перерыв'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -28,7 +31,8 @@ export const ScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Всеволод Соловьёв', title: 'How to debug. Everything.'},
+      {author: 'Максим Климишин', title: 'Conflict-free replicated data types: распределенные данные в деталях'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -37,6 +41,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Кофе-брейк'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -44,7 +49,8 @@ export const ScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Anton Caceres', title: 'Async Python and Web Sockets'},
+      {author: 'Николай Бойко', title: 'NodeJS Refactoring: How to kill a Dragon and stay alive'},
+      {author: 'Максим Климишин', title: 'Построение блокчейна, используя CRDT и Merkle Trees \[Мастер класс\]'}
     ]
   },
   {
@@ -53,6 +59,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Обед'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -60,7 +67,8 @@ export const ScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Андрей Солдатенко', title: 'Competitive programming using Python'},
+      {author: 'Александра Калинина', title: 'Тестирование деплоймент процесса на GCP'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -69,6 +77,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Перерыв'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -76,7 +85,8 @@ export const ScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Игорь Давыденко', title: 'Миграция с Django REST Framework на GraphQL'},
+      {author: 'Станислав Джус', title: 'Способы коммуникации между микросервисами'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -85,6 +95,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Кофе-брейк'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -92,7 +103,8 @@ export const ScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Дмитрий Кодратенко', title: 'Парсинг с помощью Python фреймворка Scrapy в промышленных масштабаx'},
+      {author: 'Дмитрий Чиркин', title: 'PostgreSQL для хипстеров или почему ваш следующий проект должен быть на PostgreSQL'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -101,6 +113,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Перерыв'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -108,7 +121,8 @@ export const ScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Александр Соловьёв', title: 'Make it fast'},
+      {author: 'Юрий Чихрай', title: 'Streams - ликвидация безграмотности'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -117,6 +131,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Перерыв'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -124,8 +139,8 @@ export const ScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Виталий Кучерявый', title: 'Django-prototyper - от идеи до деплоя за 5 минут'},
-      {author: 'Алексей Милоградов', title: 'Критический взгляд на Django ORM'},
+      {author: 'Дмитрий Гусев', title: '"Не бей лежачего" - полезные инструменты для быстрого старта разработки проекта на Node.js'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -134,6 +149,7 @@ export const ScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Перерыв'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -141,31 +157,17 @@ export const ScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Виталий Андросенко', title: 'SQLAachemy: practic magic'},
+      {author: 'Денис Ярмош', title: ''},
+      {author: '', title: ''}
     ]
   },
   {
-    time:'18.30-18.40',
-    icon:'clock',
-    scheduleRendered: '',
-    talks: [
-      {author: '', title: 'Перерыв'},
-    ]
-  },
-  {
-    time:'18.40-19.20',
-    icon:'sheet',
-    scheduleRendered: '',
-    talks: [
-      {author: 'Сергей Русских', title: 'Можно ли оценить качество кода через его "тестируемость"?'},
-    ]
-  },
-  {
-    time:'19.30',
+    time:'18.30',
     icon:'people',
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Закрытие конференции'},
+      {author: '', title: ''}
     ]
   },
 ];

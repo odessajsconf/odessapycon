@@ -1,8 +1,5 @@
 import $ from 'jquery';
-import { Popup } from '../Components/Popup';
 import { Helpers } from '../Helpers';
-import { ScheduleRu } from '../../lang/js/ru/schedule-ru.js';
-import { ScheduleEn } from '../../lang/js/en/schedule-en.js';
 
 
 
@@ -10,14 +7,11 @@ window.jQuery = $;
 require('../vendors/jquery-tmpl/jquery.tmpl.min');
 
 
-// import {ScheduleEn} from '../lang/en/schedule-en.js'
-
-
 export class RenderSchedule {
-  constructor() {
-    this.popup = new Popup('#speakers-modal');
+  constructor(options) {
     this.CONFIG = window.CONFIG;
     this.schedule = null;
+    this.options = options;
     this._init();
     this._events();
     this.helpers = new Helpers();
@@ -26,9 +20,9 @@ export class RenderSchedule {
 
   _init() {
     if(this.CONFIG.LANG === 'ru') {
-      this.schedule = ScheduleRu;
+      this.schedule = this.options.scheduleRu;
     } else {
-      this.schedule = ScheduleEn;
+      this.schedule = this.options.scheduleEn;
     }
 
     let scheduleRow = '<div class="schedule-item">' +
@@ -39,14 +33,12 @@ export class RenderSchedule {
     $.template('scheduleRow', scheduleRow);
 
     let scheduleItem = '<div class="schedule-text flex-item-1">' +
-      '                  {{html title }}' +
+      '                  {{html title}}' +
       '                  <div class="schedule-author">' +
       '                    ${author}' +
       '                  </div>' +
       '                </div>';
     $.template('scheduleItemTemplate', scheduleItem);
-
-
 
 
     let scheduleHtml = '';
@@ -66,8 +58,7 @@ export class RenderSchedule {
 
     });
 
-    $('#schedule-list .schedule-body').html(scheduleHtml);
-
+    $(`${this.options.container} .schedule-body`).html(scheduleHtml);
   }
 
   _events() {

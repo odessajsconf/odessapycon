@@ -1,10 +1,11 @@
-export const ScheduleEn = [
+export const MainScheduleEn = [
   {
     time:'9.00-10.00',
     icon:'profile',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Registrartion'},
+      {author: '', title: 'Registration'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -12,7 +13,8 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Yehor Nazarkin', title: 'Journey to distributed task queue'},
+      {author: 'Roman Sachenko', title: 'NodeJS Security or Blackened is The End'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -21,6 +23,7 @@ export const ScheduleEn = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Break'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -28,7 +31,8 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Vsevolod Solovyov', title: 'How to debug. Everything.'},
+      {author: 'Max Klymyshyn', title: 'Conflict-free replicated data types: distributed data in detail'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -37,6 +41,7 @@ export const ScheduleEn = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Coffee break'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -44,7 +49,8 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Anton Caceres', title: 'Async Python and Web Sockets'},
+      {author: 'Nikolai Boiko', title: 'NodeJS Refactoring: How to kill a Dragon and stay alive'},
+      {author: 'Max Klymyshyn', title: 'Build blockchain using CRDT and Merkle Trees \[Master Class\]'}
     ]
   },
   {
@@ -53,6 +59,7 @@ export const ScheduleEn = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Lunch'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -60,7 +67,8 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Andrii Soldatenko', title: 'Competitive programming using Python'},
+      {author: 'Alexandra Kalinina', title: 'Testing of deployment process to GCP'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -69,6 +77,7 @@ export const ScheduleEn = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Break'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -76,7 +85,8 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Igor Davydenko', title: 'How I migrate from REST API to GraphQL'},
+      {author: 'Stanislav Dzhus', title: 'Ways of communication between microservices'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -85,6 +95,7 @@ export const ScheduleEn = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Coffee break'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -92,7 +103,8 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Dmitry Kondratenko', title: ''},
+      {author: 'Dmitry Chirkin', title: 'PostgreSQL for hipsters or why your next project should be in PostgreSQL'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -101,6 +113,7 @@ export const ScheduleEn = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Break'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -108,7 +121,8 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Alexander Solovyov', title: 'Make it fast'},
+      {author: 'Yurii Chikhrai', title: 'Eradication of illiteracy in Streams'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -117,6 +131,7 @@ export const ScheduleEn = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Break'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -124,8 +139,8 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Vitaliy Kucheryaviy', title: 'Django-prototyper - from idea to deploy in 5 minuets'},
-      {author: 'Alexey Milogradov', title: 'Django ORM: General Overview'},
+      {author: 'Dmitriy Gusev', title: '"Don’t hit a man while he’s down" - useful tools for a quick Node.JS project’s development start'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -134,6 +149,7 @@ export const ScheduleEn = [
     scheduleRendered: '',
     talks: [
       {author: '', title: 'Break'},
+      {author: '', title: ''}
     ]
   },
   {
@@ -141,31 +157,17 @@ export const ScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Vitaliy Androsenko', title: 'SQLAachemy: practic magic'},
+      {author: 'Dennis Yarmosh', title: ''},
+      {author: '', title: ''}
     ]
   },
   {
-    time:'18.30-18.40',
-    icon:'clock',
-    scheduleRendered: '',
-    talks: [
-      {author: '', title: 'Break'},
-    ]
-  },
-  {
-    time:'18.40-19.20',
-    icon:'sheet',
-    scheduleRendered: '',
-    talks: [
-      {author: 'Serhii Ruskykh', title: 'Can be code quality measured via "testability"?'},
-    ]
-  },
-  {
-    time:'19.30',
+    time:'18.30',
     icon:'people',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Conference closing'},
+      {author: '', title: 'Conference Closing'},
+      {author: '', title: ''}
     ]
   },
 ];
