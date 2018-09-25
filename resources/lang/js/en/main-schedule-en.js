@@ -12,7 +12,7 @@ export const MainScheduleEn = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Yehor Nazarkin', title: 'Journey to distributed task queue'},
+      {author: 'Yehor Nazarkin', title: 'Journey to the distributed task queue'},
     ]
   },
   {
