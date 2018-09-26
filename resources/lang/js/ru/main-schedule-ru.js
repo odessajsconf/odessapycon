@@ -81,10 +81,10 @@ export const MainScheduleRu = [
   },
   {
     time:'15.00-15.15',
-    icon:'cup',
+    icon:'clock',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Кофе-брейк'},
+      {author: '', title: 'Перерыв'},
     ]
   },
   {
@@ -93,14 +93,15 @@ export const MainScheduleRu = [
     scheduleRendered: '',
     talks: [
       {author: 'Дмитрий Кодратенко', title: 'Парсинг с помощью Python фреймворка Scrapy в промышленных масштабаx'},
+	  {author: 'Сергей Русских', title: 'Можно ли оценить качество кода через его "тестируемость"?'},
     ]
   },
   {
     time:'15.55-16.05',
-    icon:'clock',
+    icon:'cup',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Перерыв'},
+      {author: '', title: 'Кофе-брейк'},
     ]
   },
   {
@@ -145,23 +146,7 @@ export const MainScheduleRu = [
     ]
   },
   {
-    time:'18.30-18.40',
-    icon:'clock',
-    scheduleRendered: '',
-    talks: [
-      {author: '', title: 'Перерыв'},
-    ]
-  },
-  {
-    time:'18.40-19.20',
-    icon:'sheet',
-    scheduleRendered: '',
-    talks: [
-      {author: 'Сергей Русских', title: 'Можно ли оценить качество кода через его "тестируемость"?'},
-    ]
-  },
-  {
-    time:'19.30',
+    time:'18.30',
     icon:'people',
     scheduleRendered: '',
     talks: [

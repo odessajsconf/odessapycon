@@ -81,10 +81,10 @@ export const MainScheduleEn = [
   },
   {
     time:'15.00-15.15',
-    icon:'cup',
+    icon:'clock',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Coffee break'},
+      {author: '', title: 'Break'},
     ]
   },
   {
@@ -93,14 +93,15 @@ export const MainScheduleEn = [
     scheduleRendered: '',
     talks: [
       {author: 'Dmitry Kondratenko', title: ''},
+	  {author: 'Serhii Ruskykh', title: 'Can be code quality measured via "testability"?'},
     ]
   },
   {
     time:'15.55-16.05',
-    icon:'clock',
+    icon:'cup',
     scheduleRendered: '',
     talks: [
-      {author: '', title: 'Break'},
+      {author: '', title: 'Сoffee Break'},
     ]
   },
   {
@@ -145,23 +146,7 @@ export const MainScheduleEn = [
     ]
   },
   {
-    time:'18.30-18.40',
-    icon:'clock',
-    scheduleRendered: '',
-    talks: [
-      {author: '', title: 'Break'},
-    ]
-  },
-  {
-    time:'18.40-19.20',
-    icon:'sheet',
-    scheduleRendered: '',
-    talks: [
-      {author: 'Serhii Ruskykh', title: 'Can be code quality measured via "testability"?'},
-    ]
-  },
-  {
-    time:'19.30',
+    time:'18.30',
     icon:'people',
     scheduleRendered: '',
     talks: [
