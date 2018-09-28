@@ -142,7 +142,7 @@ export const MainScheduleRu = [
     icon:'sheet',
     scheduleRendered: '',
     talks: [
-      {author: 'Виталий Андросенко', title: 'SQLAachemy: practic magic'},
+      {author: 'Виталий Андросенко', title: 'SQLAlchemy: practic magic'},
     ]
   },
   {

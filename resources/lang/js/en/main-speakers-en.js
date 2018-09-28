@@ -267,7 +267,7 @@ export const MainSpeakersEn = [
     place : 'Kharkov, Ukraine',
     rept : [
       {
-        title : 'SQLAachemy: practic magic [Ru]',
+        title : 'SQLAlchemy: practic magic [Ru]',
         description : 'В докладе будут описаны интересные фишки алхимии, про которые все забывают сразу после ' +
         'прочтения документации, а так же подняты вопросы обхода наиболее опасных ям для начинающих магов'
       }
