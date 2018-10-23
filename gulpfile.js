@@ -11,7 +11,8 @@ let gulp = require('gulp'),
   livereload = require('gulp-livereload'),
   hash_src = require('gulp-hash-src'),
   htmlmin = require('gulp-htmlmin');
-i18n = require('gulp-html-i18n');
+  i18n = require('gulp-html-i18n');
+  browserSync = require('browser-sync').create();
 
 var replace = require('gulp-replace');
 var htmlreplace = require('gulp-html-replace');
@@ -35,6 +36,13 @@ gulp.src = function () {
   return helpers.fixPipe(origSrc.apply(this, arguments));
 };
 
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
 
 gulp.task('fonts', function () {
   return gulp.src(path.fonts)
@@ -144,7 +152,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', function (callback) {
-  runSequence('script', 'less', 'fonts', 'docs', 'img', /*'hash', */'localize-default', 'watch', callback)});
+  runSequence('script', 'less', 'fonts', 'docs', 'img', /*'hash', */'localize-default', 'browser-sync', 'watch', callback)});
 
 gulp.task('prod', function (callback) {
   runSequence('script-min', 'less', 'fonts', 'docs', 'img', /*'hash', */'localize-default', callback)});

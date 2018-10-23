@@ -34,6 +34,10 @@ export const MainSpeakersRu = [
         link : 'https://caceres.me',
         fatype : 'link'
       },
+      {
+          link : 'https://drive.google.com/open?id=1TDI2JCGlUHj6pJDl6KAR16hi_CGeHkZI',
+          fatype : 'file-powerpoint-o'
+        },
     ]
   },
   {
@@ -52,7 +56,12 @@ export const MainSpeakersRu = [
     ],
     aboutSpeaker : '',
     socialsRendered : '',
-    socials : []
+    socials : [
+        {
+          link : 'https://drive.google.com/open?id=1kh7Nk2pSusGxXOOq74t5neUIwm6JgBPu',
+          fatype : 'file-powerpoint-o'
+        },
+    ]
   },
   {
     image : 'public/img/speakers/igor_davydenko.jpg',
@@ -80,7 +89,11 @@ export const MainSpeakersRu = [
       {
         link : 'https://github.com/playpauseandstop',
         fatype : 'github'
-      }
+      },
+      {
+          link : 'https://igordavydenko.com/talks/cz-pycon-2018/#slide-1',
+          fatype : 'file-powerpoint-o'
+        },
     ]
   },
   {
@@ -111,6 +124,10 @@ export const MainSpeakersRu = [
       {
         link : 'https://www.facebook.com/vsevolod.solovyov',
         fatype : 'facebook'
+      },
+      {
+          link : 'https://drive.google.com/open?id=1tVQcxK84U8fH4abGZGjqpCtG1kyzb5zO',
+          fatype : 'file-powerpoint-o'
       },
     ]
   },
@@ -144,6 +161,10 @@ export const MainSpeakersRu = [
         link : 'https://www.linkedin.com/in/andriisoldatenko/',
         fatype : 'linkedin'
       },
+      {
+          link : 'https://drive.google.com/open?id=1mfR_Wtx-00p91JGWCDX4SLyUcqahGLbT',
+          fatype : 'file-powerpoint-o'
+      },
     ]
   },
   {
@@ -167,7 +188,11 @@ export const MainSpeakersRu = [
       {
         link : 'https://www.linkedin.com/in/asolovyov/',
         fatype : 'linkedin'
-      }
+      },
+      {
+          link : 'https://solovyov.net/slides/18-09-15-make-it-fast/#1',
+          fatype : 'file-powerpoint-o'
+      },
     ]
   },
   {
@@ -194,7 +219,11 @@ export const MainSpeakersRu = [
       {
         link : 'https://github.com/vitalik',
         fatype : 'github'
-      }
+      },
+      {
+          link : 'https://drive.google.com/open?id=1w_D5i6nux3cAUkefjvqraj1A4dGL0ZtS',
+          fatype : 'file-powerpoint-o'
+      },
     ]
   },
   {
@@ -220,7 +249,11 @@ export const MainSpeakersRu = [
       {
         link : 'https://github.com/srusskih',
         fatype : 'github'
-      }
+      },
+      {
+          link : 'https://drive.google.com/open?id=1oHCBlaH9IH_NSg8_AoCFfH4GRzPNoMA0',
+          fatype : 'file-powerpoint-o'
+      },
     ]
   },
   {
@@ -254,7 +287,11 @@ export const MainSpeakersRu = [
       {
         link : 'mailto:alexey.milogradov@gmail.com',
         fatype : 'envelope'
-      }
+      },
+      {
+          link : 'https://drive.google.com/open?id=1VwXvi-705kAb8OeAdcsDLmqRHK4JrDnO',
+          fatype : 'file-powerpoint-o'
+      },
     ]
   },
   {
@@ -284,7 +321,11 @@ export const MainSpeakersRu = [
       {
         link : 'mailto:muataimoto@gmail.com',
         fatype : 'envelope'
-      }
+      },
+      {
+          link : 'https://drive.google.com/open?id=15SAiFD4jV9KXDh95KGaRBE74z-WZnSAz',
+          fatype : 'file-powerpoint-o'
+      },
     ]
   },
   {
@@ -316,7 +357,11 @@ export const MainSpeakersRu = [
       {
         link : 'mailto:dk@competera.net',
         fatype : 'envelope'
-      }
+      },
+      {
+          link : 'https://drive.google.com/open?id=17FHfWUfic4gywLD-8-5zogzn-zvvD6aO',
+          fatype : 'file-powerpoint-o'
+      },
     ]
   },
 ];
